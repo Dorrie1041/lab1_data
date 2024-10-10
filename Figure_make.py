@@ -94,37 +94,46 @@ def get_dcache_miss_ratio(descriptor_data, sim_path, output_dir):
             avg_ratio_config = 0.0
             cnt_benchmarks = 0
             for benchmark in benchmarks_org:
-                benchmark_name = benchmark.split("/")
+                benchmark_name = benchmark.split("/")[-1]
                 exp_path = sim_path + '/' + benchmark + '/' + descriptor_data["experiment"] + '/'
-                
+
                 dcache_misses = 0
                 dcache_hits = 0
-                
+
                 # Read from memory.stat.0.csv for DCache misses and hits
                 with open(exp_path + config_key + '/memory.stat.0.csv') as f:
-                    lines = f.readlines()
-                    for line in lines:
-                        if 'DCACHE_MISS_count' in line:
-                            tokens = [x.strip() for x in line.split(',')]
-                            dcache_misses = int(tokens[1])
-                        if 'DCACHE_HIT_count' in line:
-                            tokens = [x.strip() for x in line.split(',')]
-                            dcache_hits = int(tokens[1])
+                    for line in f:
+                        if "DCACHE_HIT_count" in line and "DC_PREF_REQ_DCACHE_HIT_count" not in line:
+                            print("HIT line: ", line.strip())  # Debug print
+                            dcache_hits = int(line.split(',')[1].strip())
+                        elif "DCACHE_MISS_count" in line and "NUM_WINDOWS_WITH_DCACHE_MISS_count" not in line:
+                            print("MISS line: ", line.strip())  # Debug print
+                            dcache_misses = int(line.split(',')[1].strip())
+
+                # Debugging print for the current benchmark
+                print(f"Benchmark: {benchmark_name}, DCache Misses: {dcache_misses}, DCache Hits: {dcache_hits}")
 
                 # Calculate DCache miss ratio
                 dcache_accesses = dcache_misses + dcache_hits
-                ratio = dcache_misses / dcache_accesses if dcache_accesses > 0 else 0
-                avg_ratio_config += ratio
+                if dcache_accesses > 0:
+                    ratio = dcache_misses / dcache_accesses
+                else:
+                    ratio = 0
 
+                avg_ratio_config += ratio
                 cnt_benchmarks += 1
+
+                # Append benchmark name if not already done
                 if len(benchmarks_org) > len(benchmarks):
                     benchmarks.append(benchmark_name)
 
                 ratio_config.append(ratio)
 
             # Append average ratio for this configuration
-            num = len(benchmarks)
-            ratio_config.append(avg_ratio_config / num)
+            if cnt_benchmarks > 0:
+                ratio_config.append(avg_ratio_config / cnt_benchmarks)
+            else:
+                ratio_config.append(0)
             dcache_miss_ratio[config_key] = ratio_config
 
         # Add 'Avg' to the benchmark list
@@ -134,7 +143,7 @@ def get_dcache_miss_ratio(descriptor_data, sim_path, output_dir):
         plot_data(benchmarks, dcache_miss_ratio, 'DCache Miss Ratio', output_dir + '/DCache_Miss_Ratio.png')
 
     except Exception as e:
-        print(e)        
+        print(e)
 
 def get_icache_miss_ratio(descriptor_data, sim_path, output_dir):
     benchmarks_org = descriptor_data["workloads_list"].copy()
@@ -237,4 +246,4 @@ if __name__ == "__main__":
     descriptor_data = read_descriptor_from_json(descriptor_filename)
 
     if descriptor_data:
-        get_icache_miss_ratio(descriptor_data, args.simulation_path, args.output_dir)
+        get_dcache_miss_ratio(descriptor_data, args.simulation_path, args.output_dir)  
