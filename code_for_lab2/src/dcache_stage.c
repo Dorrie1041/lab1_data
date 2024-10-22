@@ -369,35 +369,26 @@ void update_dcache_stage(Stage_Data* src_sd) {
         wake_up_ops(op, REG_DATA_DEP, model->wake_hook);
       }
     } else {  // data cache miss
-      Dcache_Data *cache_line = (Dcache_Data *) cache_access(&dc->dcache, op->oracle_info.va, &line_addr, FALSE);
-      if (!line){
-        bool is_compulsory_miss = false;
-        bool is_conflict_miss = false;
-        bool is_capacity_miss = false;
-
-        Dcache_Data* accessed_line = (Dcache_Data*) cache_access(&dc->dcache, op->oracle_info.va, &line_addr, FALSE);
-        if (!accessed_line){
-          is_compulsory_miss = true;
-        }
-
-        if (!is_compulsory_miss){
-          if (cache_get_invalid_line_count(&dc->dcache) > 0){
-            is_conflict_miss = true;
+      uns invalid_line_count = cache_get_invalid_line_count(&dc->dcache, op->oracle_info.va);
+      if (invalid_line_count > 0){
+        STAT_EVENT(dc->proc_id, COMPULSORY_MISS);
+      }
+      else{
+        uns total_valid_entries = 0;
+        Addr tag;
+        uns set = cache_index(dc->dcache, op->oracle_info.va, &tag, &line_addr);
+        for (int ii = 0; ii< dc->dcache.assoc; ii++){
+          Cache_Entry* entry = &dc->dcache.entries[set][ii];
+          if (entry->valid){
+            total_valid_entries++;
           }
         }
 
-        if (cache_get_invalid_line_count(&dc->dcache) == 0){
-          is_capacity_miss = true;
+        if (total_valid_entries == dc->dcache.assoc){
+          STAT_EVENT(dc->proc_id, CAPACITY_MISS);
+        } else {
+          STAT_EVENT(dc->proc_id, CONFLICT_MISS);
         }
-
-        if (is_compulsory_miss){
-          STAT_EVENT(op->proc_id, COMPULSORY_MISS);
-        } else if (is_capacity_miss){
-          STAT_EVENT(op->proc_id, CONFLICT_MISS);
-        } else if (is_capacity_miss){
-          STAT_EVENT(op->proc_id, CAPACITY_MISS);
-        }
-
       }
       if(op->table_info->mem_type == MEM_ST)
         STAT_EVENT(op->proc_id, POWER_DCACHE_WRITE_MISS);
