@@ -2,31 +2,31 @@
 ####################################################################################################
 Core 0
 ####################################################################################################
-Cumulative:        Cycles: 14800753              Instructions: 20000002              IPC: 1.35128
+Cumulative:        Cycles: 14874079              Instructions: 20000002              IPC: 1.34462
 
-Periodic:          Cycles: 7248852               Instructions: 9999997               IPC: 1.37953
+Periodic:          Cycles: 7295946               Instructions: 9999997               IPC: 1.37062
 
-ICACHE_MISS                                          8        0.012%              166        0.120%
-ICACHE_HIT                                       66578       99.988%           138180       99.880%
-                                                 66586      100.000%           138346      100.000%
+ICACHE_MISS                                          8        0.012%              160        0.116%
+ICACHE_HIT                                       66600       99.988%           138224       99.884%
+                                                 66608      100.000%           138384      100.000%
                                                   1.00         1.00              1.00         1.00
 
-ICACHE_MISS_ONPATH                                   5       62.500%               94       56.627%
-ICACHE_MISS_OFFPATH                                  3       37.500%               72       43.373%
-                                                     8      100.000%              166      100.000%
-                                                  0.38         0.48              0.43         0.47
+ICACHE_MISS_ONPATH                                   4       50.000%               92       57.500%
+ICACHE_MISS_OFFPATH                                  4       50.000%               68       42.500%
+                                                     8      100.000%              160      100.000%
+                                                  0.50         0.53              0.42         0.47
 
-ICACHE_MISS_NOT_PREFETCHED                           0        0.000%               20       12.579%
+ICACHE_MISS_NOT_PREFETCHED                           0        0.000%               14        9.150%
 ICACHE_MISS_PREFETCHED_AND_EVICTED_BY_IFETCH             0        0.000%                0        0.000%
 ICACHE_MISS_PREFETCHED_AND_EVICTED_BY_FDIP             0        0.000%                0        0.000%
-ICACHE_MISS_MSHR_HIT_PREFETCHED_OFFPATH              3       37.500%               73       45.912%
-ICACHE_MISS_MSHR_HIT_PREFETCHED_ONPATH               5       62.500%               66       41.509%
-                                                     8      100.000%              159      100.000%
-                                                  3.62         3.11              3.04         2.06
+ICACHE_MISS_MSHR_HIT_PREFETCHED_OFFPATH              4       50.000%               72       47.059%
+ICACHE_MISS_MSHR_HIT_PREFETCHED_ONPATH               4       50.000%               67       43.791%
+                                                     8      100.000%              153      100.000%
+                                                  3.50         2.70              3.16         2.18
 
-ICACHE_HIT_ONPATH                                32830       49.311%            68517       49.585%
-ICACHE_HIT_OFFPATH                               33748       50.689%            69663       50.415%
-                                                 66578      100.000%           138180      100.000%
+ICACHE_HIT_ONPATH                                32841       49.311%            68538       49.585%
+ICACHE_HIT_OFFPATH                               33759       50.689%            69686       50.415%
+                                                 66600      100.000%           138224      100.000%
                                                   0.51         0.50              0.50         0.50
 
 ICACHE_HIT_ONPATH_SAT_BY_OFFPATH                     0         -nan%                0         -nan%
@@ -44,21 +44,21 @@ ICACHE_HIT_BY_FDIP_OFFPATH                           0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-ICACHE_MISS_MSHR_HIT_BY_FDIP_ONPATH                  4       50.000%               43       30.935%
-ICACHE_MISS_MSHR_HIT_BY_FDIP_OFFPATH                 4       50.000%               96       69.065%
+ICACHE_MISS_MSHR_HIT_BY_FDIP_ONPATH                  3       37.500%               44       31.655%
+ICACHE_MISS_MSHR_HIT_BY_FDIP_OFFPATH                 5       62.500%               95       68.345%
                                                      8      100.000%              139      100.000%
-                                                  0.50         0.53              0.69         0.63
+                                                  0.62         0.62              0.68         0.62
 
 ICACHE_HIT_ONPATH_BY_FDIP                            0        0.000%                0        0.000%
 ICACHE_HIT_OFFPATH_BY_FDIP                           0        0.000%                0        0.000%
-ICACHE_MISS_MSHR_HIT_ONPATH_BY_FDIP                  5       62.500%               74       44.578%
-ICACHE_MISS_MSHR_HIT_OFFPATH_BY_FDIP                 3       37.500%               65       39.157%
+ICACHE_MISS_MSHR_HIT_ONPATH_BY_FDIP                  4       50.000%               78       48.750%
+ICACHE_MISS_MSHR_HIT_OFFPATH_BY_FDIP                 4       50.000%               61       38.125%
 ICACHE_MISS_TOO_EARLY_ONPATH                         0        0.000%                0        0.000%
 ICACHE_MISS_TOO_EARLY_OFFPATH                        0        0.000%                0        0.000%
-ICACHE_MISS_NOT_PREFETCHED_ONPATH                    0        0.000%               20       12.048%
-ICACHE_MISS_NOT_PREFETCHED_OFFPATH                   0        0.000%                7        4.217%
-                                                     8      100.000%              166      100.000%
-                                                  2.38         0.52              3.08         1.62
+ICACHE_MISS_NOT_PREFETCHED_ONPATH                    0        0.000%               14        8.750%
+ICACHE_MISS_NOT_PREFETCHED_OFFPATH                   0        0.000%                7        4.375%
+                                                     8      100.000%              160      100.000%
+                                                  2.50         0.53              2.95         1.54
 
 ICACHE_UNIQUE_MISSED_LINES                           0                              0              
 
@@ -66,26 +66,26 @@ ICACHE_UNIQUE_HIT_LINES                              0                          
 
 ICACHE_OVERTAKE_FDIP                                 0                              0              
 
-FT_UOP_CACHE_HIT_ON_PATH                       1231090       97.402%          2478171       97.306%
-FT_UOP_CACHE_MISS_ICACHE_HIT_ON_PATH             32830        2.597%            68517        2.690%
-FT_UOP_CACHE_MISS_ICACHE_MISS_ON_PATH                5        0.000%               94        0.004%
-                                               1263925      100.000%          2546782      100.000%
+FT_UOP_CACHE_HIT_ON_PATH                       1231080       97.401%          2478151       97.305%
+FT_UOP_CACHE_MISS_ICACHE_HIT_ON_PATH             32841        2.598%            68538        2.691%
+FT_UOP_CACHE_MISS_ICACHE_MISS_ON_PATH                4        0.000%               92        0.004%
+                                               1263925      100.000%          2546781      100.000%
                                                   0.03         0.16              0.03         0.16
 
-FT_UOP_CACHE_HIT_OFF_PATH                      1239264       97.349%          2405512       97.183%
-FT_UOP_CACHE_MISS_ICACHE_HIT_OFF_PATH            33748        2.651%            69663        2.814%
-FT_UOP_CACHE_MISS_ICACHE_MISS_OFF_PATH               3        0.000%               72        0.003%
-                                               1273015      100.000%          2475247      100.000%
+FT_UOP_CACHE_HIT_OFF_PATH                      1239578       97.348%          2406343       97.183%
+FT_UOP_CACHE_MISS_ICACHE_HIT_OFF_PATH            33759        2.651%            69686        2.814%
+FT_UOP_CACHE_MISS_ICACHE_MISS_OFF_PATH               4        0.000%               68        0.003%
+                                               1273341      100.000%          2476097      100.000%
                                                   0.03         0.16              0.03         0.16
 
-UOPS_SERVED_BY_ICACHE_ON_PATH                   284701        2.738%           585856        2.814%
-UOPS_SERVED_BY_UOP_CACHE_ON_PATH              10113765       97.262%         20233197       97.186%
+UOPS_SERVED_BY_ICACHE_ON_PATH                   284761        2.738%           585955        2.815%
+UOPS_SERVED_BY_UOP_CACHE_ON_PATH              10113705       97.262%         20233098       97.185%
                                               10398466      100.000%         20819053      100.000%
                                                   0.97         0.96              0.97         0.96
 
-UOPS_SERVED_BY_ICACHE_OFF_PATH                  408450        4.009%           836361        4.234%
-UOPS_SERVED_BY_UOP_CACHE_OFF_PATH              9781115       95.991%         18917499       95.766%
-                                              10189565      100.000%         19753860      100.000%
+UOPS_SERVED_BY_ICACHE_OFF_PATH                  408501        4.008%           836444        4.233%
+UOPS_SERVED_BY_UOP_CACHE_OFF_PATH              9783901       95.992%         18925075       95.767%
+                                              10192402      100.000%         19761519      100.000%
                                                   0.96         0.94              0.96         0.94
 
 ICACHE_HIT_UOP_CACHE_MISS_ON_PATH                    0         -nan%                0         -nan%
@@ -102,42 +102,42 @@ ICACHE_MISS_UOP_CACHE_HIT_OFF_PATH                   0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-UOP_CACHE_FT_INSERTED_ONPATH_USED_ONPATH         14410                          29022              
+UOP_CACHE_FT_INSERTED_ONPATH_USED_ONPATH         14417                          29041              
 
-UOP_CACHE_FT_INSERTED_OFFPATH_USED_ONPATH         13525                          27598              
+UOP_CACHE_FT_INSERTED_OFFPATH_USED_ONPATH         13523                          27600              
 
-UOP_CACHE_LINE_INSERTED_ONPATH_USED_ONPATH         28587                          56594              
+UOP_CACHE_LINE_INSERTED_ONPATH_USED_ONPATH         28598                          56619              
 
-UOP_CACHE_LINE_INSERTED_OFFPATH_USED_ONPATH         26748                          54190              
+UOP_CACHE_LINE_INSERTED_OFFPATH_USED_ONPATH         26742                          54191              
 
 UOP_CACHE_PREFETCH                                   0                              0              
 
 UOP_CACHE_FT_INSERT_FAILED_INST_TOO_BIG_ON_PATH             0        0.000%                0        0.000%
 UOP_CACHE_FT_INSERT_FAILED_FT_TOO_BIG_ON_PATH             0        0.000%                0        0.000%
-UOP_CACHE_FT_INSERT_CONFLICTED_SHORT_REUSE_ON_PATH          2879        8.772%             6406        9.362%
-UOP_CACHE_FT_INSERT_SUCCEEDED_ON_PATH            29942       91.228%            62023       90.638%
-                                                 32821      100.000%            68429      100.000%
+UOP_CACHE_FT_INSERT_CONFLICTED_SHORT_REUSE_ON_PATH          2880        8.772%             6410        9.365%
+UOP_CACHE_FT_INSERT_SUCCEEDED_ON_PATH            29951       91.228%            62038       90.635%
+                                                 32831      100.000%            68448      100.000%
                                                   2.91         2.80              2.91         2.78
 
 UOP_CACHE_FT_INSERT_FAILED_INST_TOO_BIG_OFF_PATH             0        0.000%                0        0.000%
 UOP_CACHE_FT_INSERT_FAILED_FT_TOO_BIG_OFF_PATH             0        0.000%                0        0.000%
-UOP_CACHE_FT_INSERT_CONFLICTED_SHORT_REUSE_OFF_PATH          3529       13.381%             6716       12.343%
-UOP_CACHE_FT_INSERT_SUCCEEDED_OFF_PATH           22845       86.619%            47697       87.657%
-                                                 26374      100.000%            54413      100.000%
+UOP_CACHE_FT_INSERT_CONFLICTED_SHORT_REUSE_OFF_PATH          3529       13.378%             6713       12.336%
+UOP_CACHE_FT_INSERT_SUCCEEDED_OFF_PATH           22850       86.622%            47703       87.664%
+                                                 26379      100.000%            54416      100.000%
                                                   2.87         2.69              2.88         2.71
 
 UOP_CACHE_LINE_INSERT_FAILED_INST_TOO_BIG_ON_PATH             0        0.000%                0        0.000%
 UOP_CACHE_LINE_INSERT_FAILED_FT_TOO_BIG_ON_PATH             0        0.000%                0        0.000%
-UOP_CACHE_LINE_INSERT_CONFLICTED_SHORT_REUSE_ON_PATH          9618       13.558%            19517       13.476%
-UOP_CACHE_LINE_INSERT_SUCCEEDED_ON_PATH          61321       86.442%           125307       86.524%
-                                                 70939      100.000%           144824      100.000%
+UOP_CACHE_LINE_INSERT_CONFLICTED_SHORT_REUSE_ON_PATH          9621       13.559%            19526       13.480%
+UOP_CACHE_LINE_INSERT_SUCCEEDED_ON_PATH          61334       86.441%           125326       86.520%
+                                                 70955      100.000%           144852      100.000%
                                                   2.86         2.69              2.87         2.69
 
 UOP_CACHE_LINE_INSERT_FAILED_INST_TOO_BIG_OFF_PATH             0        0.000%                0        0.000%
 UOP_CACHE_LINE_INSERT_FAILED_FT_TOO_BIG_OFF_PATH             0        0.000%                0        0.000%
-UOP_CACHE_LINE_INSERT_CONFLICTED_SHORT_REUSE_OFF_PATH         12013       18.746%            22465       17.203%
-UOP_CACHE_LINE_INSERT_SUCCEEDED_OFF_PATH         52071       81.254%           108124       82.797%
-                                                 64084      100.000%           130589      100.000%
+UOP_CACHE_LINE_INSERT_CONFLICTED_SHORT_REUSE_OFF_PATH         12015       18.747%            22461       17.202%
+UOP_CACHE_LINE_INSERT_SUCCEEDED_OFF_PATH         52076       81.253%           108113       82.798%
+                                                 64091      100.000%           130574      100.000%
                                                   2.81         2.57              2.83         2.60
 
 RECOVER_AT_DECODE_BR_FROM_UOC                        0                              0              
@@ -149,14 +149,14 @@ UOP_CACHE_ICACHE_SWITCH_BR_TAKEN_CORRECT_PRED             0         -nan%       
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_0          7937       48.574%            16224       48.975%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_1           338        2.069%             1080        3.260%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_2            84        0.514%              349        1.054%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_3          2776       16.989%             5302       16.005%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_4          2247       13.752%             3799       11.468%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_5            89        0.545%              331        0.999%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_6           169        1.034%              406        1.226%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_7          2700       16.524%             5636       17.013%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_0          7937       48.547%            16224       48.940%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_1           338        2.067%             1082        3.264%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_2            84        0.514%              349        1.053%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_3          2777       16.986%             5303       15.997%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_4          2248       13.750%             3799       11.460%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_5            89        0.544%              331        0.998%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_6           169        1.034%              408        1.231%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_7          2707       16.558%             5655       17.058%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_8             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_9             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_10             0        0.000%                0        0.000%
@@ -170,17 +170,17 @@ UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_17             0        0.000%         
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_18             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_19             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_20             0        0.000%                0        0.000%
-                                                 16340      100.000%            33127      100.000%
-                                                  2.34         2.06              2.31         2.11
+                                                 16349      100.000%            33151      100.000%
+                                                  2.34         2.07              2.31         2.11
 
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_0         11205       34.288%            22862       34.634%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_1            52        0.159%              153        0.232%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_2           530        1.622%             1069        1.619%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_3          3527       10.793%             6658       10.086%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_4          4179       12.788%             7810       11.831%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_5           233        0.713%              629        0.953%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_6          2358        7.216%             4903        7.428%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_7         10595       32.421%            21927       33.217%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_0         11203       34.271%            22850       34.604%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_1            54        0.165%              154        0.233%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_2           529        1.618%             1068        1.617%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_3          3524       10.780%             6657       10.081%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_4          4184       12.799%             7814       11.834%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_5           230        0.704%              627        0.950%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_6          2358        7.213%             4903        7.425%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_7         10607       32.448%            21959       33.255%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_8             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_9             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_10             0        0.000%                0        0.000%
@@ -194,17 +194,17 @@ UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_17             0        0.000% 
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_18             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_19             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_LENGTH_OFFPATH_20             0        0.000%                0        0.000%
-                                                 32679      100.000%            66011      100.000%
+                                                 32689      100.000%            66032      100.000%
                                                   3.61         2.07              3.63         2.08
 
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_0          7937       48.574%            16224       48.975%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_0          7937       48.547%            16224       48.940%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_1             0        0.000%                0        0.000%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_2            15        0.092%               32        0.097%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_3           181        1.108%              577        1.742%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_4            64        0.392%              190        0.574%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_5          2103       12.870%             3796       11.459%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_2            15        0.092%               33        0.100%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_3           181        1.107%              576        1.738%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_4            64        0.391%              189        0.570%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_5          2104       12.869%             3798       11.457%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_6            14        0.086%              161        0.486%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_7          6008       36.769%            12101       36.529%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_7          6016       36.797%            12124       36.572%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_8             4        0.024%               10        0.030%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_9             8        0.049%                9        0.027%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_10             2        0.012%               11        0.033%
@@ -218,22 +218,22 @@ UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_17             0        0.0
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_18             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_19             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_20             0        0.000%                0        0.000%
-                                                 16340      100.000%            33127      100.000%
-                                                  3.28         2.35              3.25         2.37
+                                                 16349      100.000%            33151      100.000%
+                                                  3.29         2.35              3.25         2.37
 
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_0         11205       34.288%            22862       34.634%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_1            10        0.031%               16        0.024%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_2            13        0.040%               26        0.039%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_3            12        0.037%               30        0.045%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_4            10        0.031%               20        0.030%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_5           736        2.252%             1377        2.086%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_0         11203       34.271%            22850       34.604%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_1            11        0.034%               17        0.026%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_2            11        0.034%               24        0.036%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_3            10        0.031%               28        0.042%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_4            13        0.040%               23        0.035%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_5           736        2.252%             1375        2.082%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_6            27        0.083%               86        0.130%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_7         20525       62.808%            41288       62.547%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_8            24        0.073%               60        0.091%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_9            42        0.129%               82        0.124%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_10            40        0.122%               71        0.108%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_11            19        0.058%               55        0.083%
-UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_12             6        0.018%               17        0.026%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_7         20547       62.856%            41334       62.597%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_8            22        0.067%               57        0.086%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_9            41        0.125%               84        0.127%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_10            35        0.107%               64        0.097%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_11            19        0.058%               54        0.082%
+UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_12             4        0.012%               15        0.023%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_13             8        0.024%               18        0.027%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_14             2        0.006%                3        0.005%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_15             0        0.000%                0        0.000%
@@ -242,8 +242,8 @@ UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_17             0   
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_18             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_19             0        0.000%                0        0.000%
 UOP_CACHE_ICACHE_SWITCH_UOP_QUEUE_PLUS_DECODE_LENGTH_OFFPATH_20             0        0.000%                0        0.000%
-                                                 32679      100.000%            66011      100.000%
-                                                  4.56         1.97              4.54         1.99
+                                                 32689      100.000%            66032      100.000%
+                                                  4.56         1.97              4.54         1.98
 
 BF_UOP_CACHE_MISS_UOP_QUEUE_LENGTH_0                 0         -nan%                0         -nan%
 BF_UOP_CACHE_MISS_UOP_QUEUE_LENGTH_1                 0         -nan%                0         -nan%
@@ -293,28 +293,28 @@ BF_UOP_CACHE_MISS_UOP_QUEUE_PLUS_DECODE_LENGTH_20             0         -nan%   
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-UOP_CACHE_FT_LINES_1_ON_PATH                     10673       32.519%            22919       33.493%
-UOP_CACHE_FT_LINES_2_ON_PATH                     11756       35.819%            25185       36.805%
-UOP_CACHE_FT_LINES_3_ON_PATH                      4816       14.674%             9781       14.294%
-UOP_CACHE_FT_LINES_4_ON_PATH                      5574       16.983%            10530       15.388%
+UOP_CACHE_FT_LINES_1_ON_PATH                     10679       32.527%            22932       33.503%
+UOP_CACHE_FT_LINES_2_ON_PATH                     11758       35.814%            25188       36.799%
+UOP_CACHE_FT_LINES_3_ON_PATH                      4818       14.675%             9784       14.294%
+UOP_CACHE_FT_LINES_4_ON_PATH                      5574       16.978%            10530       15.384%
 UOP_CACHE_FT_LINES_5_ON_PATH                         2        0.006%               12        0.018%
 UOP_CACHE_FT_LINES_6_ON_PATH                         0        0.000%                2        0.003%
 UOP_CACHE_FT_LINES_7_ON_PATH                         0        0.000%                0        0.000%
 UOP_CACHE_FT_LINES_8_ON_PATH                         0        0.000%                0        0.000%
 UOP_CACHE_FT_LINES_9_AND_MORE_ON_PATH                0        0.000%                0        0.000%
-                                                 32821      100.000%            68429      100.000%
+                                                 32831      100.000%            68448      100.000%
                                                   1.16         0.83              1.12         0.82
 
-UOP_CACHE_FT_LINES_1_OFF_PATH                     5404       20.490%            11770       21.631%
-UOP_CACHE_FT_LINES_2_OFF_PATH                     8212       31.137%            16676       30.647%
-UOP_CACHE_FT_LINES_3_OFF_PATH                     8777       33.279%            18408       33.830%
-UOP_CACHE_FT_LINES_4_OFF_PATH                     3980       15.091%             7552       13.879%
+UOP_CACHE_FT_LINES_1_OFF_PATH                     5407       20.497%            11773       21.635%
+UOP_CACHE_FT_LINES_2_OFF_PATH                     8215       31.142%            16688       30.667%
+UOP_CACHE_FT_LINES_3_OFF_PATH                     8775       33.265%            18402       33.817%
+UOP_CACHE_FT_LINES_4_OFF_PATH                     3981       15.092%             7546       13.867%
 UOP_CACHE_FT_LINES_5_OFF_PATH                        1        0.004%                7        0.013%
 UOP_CACHE_FT_LINES_6_OFF_PATH                        0        0.000%                0        0.000%
 UOP_CACHE_FT_LINES_7_OFF_PATH                        0        0.000%                0        0.000%
 UOP_CACHE_FT_LINES_8_OFF_PATH                        0        0.000%                0        0.000%
 UOP_CACHE_FT_LINES_9_AND_MORE_OFF_PATH               0        0.000%                0        0.000%
-                                                 26374      100.000%            54413      100.000%
+                                                 26379      100.000%            54416      100.000%
                                                   1.43         0.73              1.40         0.73
 
 UOP_CACHE_PREFETCH_PW_LENGTH_1                       0         -nan%                0         -nan%
@@ -344,25 +344,25 @@ UOP_CACHE_PREFETCH_PW_LENGTH_24                      0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-DCACHE_MISS                                      97920        3.599%           197494        3.608%
-DCACHE_ST_BUFFER_HIT                                49        0.002%              334        0.006%
-DCACHE_HIT                                     2623032       96.400%          5276034       96.386%
+DCACHE_MISS                                      99828        3.669%           201460        3.680%
+DCACHE_ST_BUFFER_HIT                                54        0.002%              363        0.007%
+DCACHE_HIT                                     2621119       96.329%          5272039       96.313%
                                                2721001      100.000%          5473862      100.000%
                                                   1.93         1.89              1.93         1.89
 
-DCACHE_MISS_ONPATH                               97920       56.520%           197494       54.944%
-DCACHE_MISS_OFFPATH                              75328       43.480%           161952       45.056%
-                                                173248      100.000%           359446      100.000%
+DCACHE_MISS_ONPATH                               99828       56.906%           201460       55.360%
+DCACHE_MISS_OFFPATH                              75597       43.094%           162449       44.640%
+                                                175425      100.000%           363909      100.000%
                                                   0.43         0.47              0.45         0.48
 
-DCACHE_ST_BUFFER_HIT_ONPATH                         49       37.405%              334       42.386%
-DCACHE_ST_BUFFER_HIT_OFFPATH                        82       62.595%              454       57.614%
-                                                   131      100.000%              788      100.000%
-                                                  0.63         0.58              0.58         0.54
+DCACHE_ST_BUFFER_HIT_ONPATH                         54       39.416%              363       44.540%
+DCACHE_ST_BUFFER_HIT_OFFPATH                        83       60.584%              452       55.460%
+                                                   137      100.000%              815      100.000%
+                                                  0.61         0.56              0.55         0.53
 
-DCACHE_HIT_ONPATH                              2623032       74.597%          5276034       75.126%
-DCACHE_HIT_OFFPATH                              893259       25.403%          1746844       24.874%
-                                               3516291      100.000%          7022878      100.000%
+DCACHE_HIT_ONPATH                              2621119       74.584%          5272039       75.113%
+DCACHE_HIT_OFFPATH                              893198       25.416%          1746774       24.887%
+                                               3514317      100.000%          7018813      100.000%
                                                   0.25         0.40              0.25         0.39
 
 DCACHE_HIT_ONPATH_SAT_BY_OFFPATH                     0         -nan%                0         -nan%
@@ -375,22 +375,22 @@ DCACHE_HIT_OFFPATH_SAT_BY_ONPATH                     0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-DCACHE_MISS_LD                                   81283       83.010%           162614       82.339%
-DCACHE_MISS_ST                                   16637       16.990%            34880       17.661%
-                                                 97920      100.000%           197494      100.000%
-                                                  0.17         0.35              0.18         0.35
+DCACHE_MISS_LD                                   81853       81.994%           163845       81.329%
+DCACHE_MISS_ST                                   17975       18.006%            37615       18.671%
+                                                 99828      100.000%           201460      100.000%
+                                                  0.18         0.36              0.19         0.36
 
-DCACHE_MISS_LD_ONPATH                            81283       52.455%           162614       50.809%
-DCACHE_MISS_LD_OFFPATH                           73676       47.545%           157437       49.191%
-                                                154959      100.000%           320051      100.000%
-                                                  0.48         0.49              0.49         0.50
+DCACHE_MISS_LD_ONPATH                            81853       52.609%           163845       50.980%
+DCACHE_MISS_LD_OFFPATH                           73734       47.391%           157548       49.020%
+                                                155587      100.000%           321393      100.000%
+                                                  0.47         0.49              0.49         0.50
 
-DCACHE_MISS_ST_ONPATH                            16637       90.967%            34880       88.539%
-DCACHE_MISS_ST_OFFPATH                            1652        9.033%             4515       11.461%
-                                                 18289      100.000%            39395      100.000%
-                                                  0.09         0.27              0.11         0.30
+DCACHE_MISS_ST_ONPATH                            17975       90.609%            37615       88.473%
+DCACHE_MISS_ST_OFFPATH                            1863        9.391%             4901       11.527%
+                                                 19838      100.000%            42516      100.000%
+                                                  0.09         0.28              0.12         0.30
 
-DCACHE_MISS_WAITMEM                                  0                             20              
+DCACHE_MISS_WAITMEM                                  0                             13              
 
 MEM_REQ_ROW_BUFFER_HITS                              0         -nan%                0         -nan%
 MEM_REQ_ROW_BUFFER_MISSES                            0         -nan%                0         -nan%
@@ -452,65 +452,65 @@ RAMULATOR_QUEUE_ENQUEUED                             0                          
 
 RAMULATOR_QUEUE_FULL                                 0                              0              
 
-BUS_DEMAND_ACCESS                                20006                          46283              
+BUS_DEMAND_ACCESS                                20994                          48391              
 
-BUS_PREF_ACCESS                                   1183                           2534              
+BUS_PREF_ACCESS                                      0                              0              
 
 BUS_ACCESS                                           0                              0              
 
-L1_DEMAND_ACCESS                                 90974                         174327              
+L1_DEMAND_ACCESS                                 91002                         174483              
 
-L1_PREF_ACCESS                                    3914                          10724              
+L1_PREF_ACCESS                                      10                           3156              
 
-L1_ACCESS                                        76566                         153169              
+L1_ACCESS                                        74246                         148831              
 
-MLC_DEMAND_ACCESS                                74799                         141044              
+MLC_DEMAND_ACCESS                                74809                         141106              
 
-MLC_PREF_ACCESS                                      9                            879              
+MLC_PREF_ACCESS                                     10                            896              
 
-MLC_ACCESS                                       74808                         141923              
+MLC_ACCESS                                       74819                         142002              
 
-L1_HIT                                            8642       30.166%            12201       21.118%
-L1_MISS                                          20006       69.834%            45575       78.882%
-                                                 28648      100.000%            57776      100.000%
-                                                  0.70         0.64              0.79         0.73
+L1_HIT                                            7673       26.769%            10174       17.591%
+L1_MISS                                          20991       73.231%            47662       82.409%
+                                                 28664      100.000%            57836      100.000%
+                                                  0.73         0.67              0.82         0.76
 
-L1_HIT_ALL                                       25758       54.836%            41664       46.033%
-L1_MISS_ALL                                      21215       45.164%            48845       53.967%
-                                                 46973      100.000%            90509      100.000%
-                                                  0.45         0.48              0.54         0.52
+L1_HIT_ALL                                       24416       53.737%            39101       44.677%
+L1_MISS_ALL                                      21020       46.263%            48419       55.323%
+                                                 45436      100.000%            87520      100.000%
+                                                  0.46         0.48              0.55         0.53
 
-L1_DEMAND_MISS                                   20004       94.292%            45568       93.291%
-L1_PREF_REQ_MISS                                  1183        5.576%             2534        5.188%
-L1_WB_MISS                                          28        0.132%              743        1.521%
-                                                 21215      100.000%            48845      100.000%
-                                                  0.06         0.23              0.08         0.32
+L1_DEMAND_MISS                                   20991       99.862%            47662       98.437%
+L1_PREF_REQ_MISS                                     0        0.000%                0        0.000%
+L1_WB_MISS                                          29        0.138%              757        1.563%
+                                                 21020      100.000%            48419      100.000%
+                                                  0.00         0.07              0.03         0.25
 
-L1_DEMAND_HIT                                     8642       33.551%            12201       29.284%
-L1_PREF_REQ_HIT                                    367        1.425%              539        1.294%
-L1_WB_HIT                                        16749       65.024%            28924       69.422%
-                                                 25758      100.000%            41664      100.000%
-                                                  1.31         1.20              1.40         1.27
+L1_DEMAND_HIT                                     7673       31.426%            10174       26.020%
+L1_PREF_REQ_HIT                                      0        0.000%                0        0.000%
+L1_WB_HIT                                        16743       68.574%            28927       73.980%
+                                                 24416      100.000%            39101      100.000%
+                                                  1.37         1.25              1.48         1.35
 
-L1_MISS_ONPATH                                   19936       99.650%            45422       99.664%
-L1_MISS_OFFPATH                                     70        0.350%              153        0.336%
-                                                 20006      100.000%            45575      100.000%
+L1_MISS_ONPATH                                   20921       99.667%            47506       99.673%
+L1_MISS_OFFPATH                                     70        0.333%              156        0.327%
+                                                 20991      100.000%            47662      100.000%
                                                   0.00         0.06              0.00         0.06
 
-L1_MISS_ALL_ONPATH                               21144       99.665%            47994       98.258%
-L1_MISS_ALL_OFFPATH                                 71        0.335%              851        1.742%
-                                                 21215      100.000%            48845      100.000%
+L1_MISS_ALL_ONPATH                               20948       99.657%            47553       98.211%
+L1_MISS_ALL_OFFPATH                                 72        0.343%              866        1.789%
+                                                 21020      100.000%            48419      100.000%
                                                   0.00         0.06              0.02         0.13
 
-L1_HIT_ONPATH                                     8624       99.792%            12170       99.746%
-L1_HIT_OFFPATH                                      18        0.208%               31        0.254%
-                                                  8642      100.000%            12201      100.000%
+L1_HIT_ONPATH                                     7655       99.765%            10146       99.725%
+L1_HIT_OFFPATH                                      18        0.235%               28        0.275%
+                                                  7673      100.000%            10174      100.000%
                                                   0.00         0.05              0.00         0.05
 
-L1_HIT_ALL_ONPATH                                25738       99.922%            41499       99.604%
-L1_HIT_ALL_OFFPATH                                  20        0.078%              165        0.396%
-                                                 25758      100.000%            41664      100.000%
-                                                  0.00         0.03              0.00         0.06
+L1_HIT_ALL_ONPATH                                24396       99.918%            38932       99.568%
+L1_HIT_ALL_OFFPATH                                  20        0.082%              169        0.432%
+                                                 24416      100.000%            39101      100.000%
+                                                  0.00         0.03              0.00         0.07
 
 L1_HIT_ONPATH_SAT_BY_OFFPATH                         0         -nan%                0         -nan%
 L1_HIT_ONPATH_SAT_BY_ONPATH                          0         -nan%                0         -nan%
@@ -558,59 +558,59 @@ L1_USE_ONPATH_DATA                                   0          -nan            
 
 L1_USE_ONPATH                                        0          -nan                0          -nan
 
-L1_CYCLE                                       7248852                       14800753              
+L1_CYCLE                                       7295946                       14874079              
 
-L1_LINES                                  226441826079    31238.3017     327656956362    22137.8572
+L1_LINES                                  227382420727    31165.5844     327802742652    22038.5237
 
-MLC_HIT                                          17662       38.142%            32116       35.732%
-MLC_MISS                                         28644       61.858%            57763       64.268%
-                                                 46306      100.000%            89879      100.000%
+MLC_HIT                                          17656       38.119%            32113       35.704%
+MLC_MISS                                         28662       61.881%            57830       64.296%
+                                                 46318      100.000%            89943      100.000%
                                                   0.62         0.57              0.64         0.59
 
-MLC_HIT_ALL                                      41624       55.650%            75681       53.336%
-MLC_MISS_ALL                                     33172       44.350%            66215       46.664%
-                                                 74796      100.000%           141896      100.000%
+MLC_HIT_ALL                                      41614       55.628%            75668       53.296%
+MLC_MISS_ALL                                     33193       44.372%            66308       46.704%
+                                                 74807      100.000%           141976      100.000%
                                                   0.44         0.47              0.47         0.48
 
-MLC_DEMAND_MISS                                  28644       86.350%            57763       87.236%
+MLC_DEMAND_MISS                                  28662       86.350%            57830       87.214%
 MLC_PREF_REQ_MISS                                    0        0.000%                0        0.000%
-MLC_WB_MISS                                       4528       13.650%             8452       12.764%
-                                                 33172      100.000%            66215      100.000%
+MLC_WB_MISS                                       4531       13.650%             8478       12.786%
+                                                 33193      100.000%            66308      100.000%
                                                   0.27         0.65              0.26         0.63
 
-MLC_DEMAND_HIT                                   17662       42.432%            32116       42.436%
+MLC_DEMAND_HIT                                   17656       42.428%            32113       42.439%
 MLC_PREF_REQ_HIT                                     0        0.000%                0        0.000%
-MLC_WB_HIT                                       23962       57.568%            43565       57.564%
-                                                 41624      100.000%            75681      100.000%
+MLC_WB_HIT                                       23958       57.572%            43555       57.561%
+                                                 41614      100.000%            75668      100.000%
                                                   1.15         1.09              1.15         1.09
 
-MLC_MISS_ONPATH                                  28463       99.368%            57426       99.417%
-MLC_MISS_OFFPATH                                   181        0.632%              337        0.583%
-                                                 28644      100.000%            57763      100.000%
+MLC_MISS_ONPATH                                  28481       99.369%            57493       99.417%
+MLC_MISS_OFFPATH                                   181        0.631%              337        0.583%
+                                                 28662      100.000%            57830      100.000%
                                                   0.01         0.08              0.01         0.08
 
-MLC_MISS_ALL_ONPATH                              32986       99.439%            65040       98.225%
-MLC_MISS_ALL_OFFPATH                               186        0.561%             1175        1.775%
-                                                 33172      100.000%            66215      100.000%
+MLC_MISS_ALL_ONPATH                              33006       99.437%            65114       98.199%
+MLC_MISS_ALL_OFFPATH                               187        0.563%             1194        1.801%
+                                                 33193      100.000%            66308      100.000%
                                                   0.01         0.07              0.02         0.13
 
-MLC_HIT_ONPATH                                   16917       95.782%            29214       90.964%
-MLC_HIT_OFFPATH                                    745        4.218%             2902        9.036%
-                                                 17662      100.000%            32116      100.000%
+MLC_HIT_ONPATH                                   16913       95.792%            29209       90.957%
+MLC_HIT_OFFPATH                                    743        4.208%             2904        9.043%
+                                                 17656      100.000%            32113      100.000%
                                                   0.04         0.20              0.09         0.27
 
-MLC_HIT_ALL_ONPATH                               40879       98.210%            72779       96.165%
-MLC_HIT_ALL_OFFPATH                                745        1.790%             2902        3.835%
-                                                 41624      100.000%            75681      100.000%
+MLC_HIT_ALL_ONPATH                               40871       98.215%            72764       96.162%
+MLC_HIT_ALL_OFFPATH                                743        1.785%             2904        3.838%
+                                                 41614      100.000%            75668      100.000%
                                                   0.02         0.13              0.04         0.19
 
-L1_QUEUE_OCCUPANCY                             1754987        0.1186          3380941        0.2284
+L1_QUEUE_OCCUPANCY                             1695760        0.1140          3265833        0.2196
 
-MLC_QUEUE_OCCUPANCY                            1708014        0.1154          3290432        0.2223
+MLC_QUEUE_OCCUPANCY                            1650324        0.1110          3178313        0.2137
 
-DCACHE_FILL_PORT_UNAVAILABLE_ONPATH                 49                            127              
+DCACHE_FILL_PORT_UNAVAILABLE_ONPATH                 42                            121              
 
-DCACHE_FILL_PORT_UNAVAILABLE_OFFPATH                10                             37              
+DCACHE_FILL_PORT_UNAVAILABLE_OFFPATH                10                             36              
 
 DCACHE_FILL_OFFPATH                                  0                              0              
 
@@ -628,19 +628,19 @@ ICACHE_FILL_ONPATH                                   0                          
 
 ICACHE_USE_ONPATH                                    0          -nan                0          -nan
 
-REQBUF_CREATE_ONPATH                             99329                         176717              
+REQBUF_CREATE_ONPATH                             97665                         173574              
 
 REQBUF_ONPATH_MATCH_OFFPATH                          0        0.0000                0        0.0000
 
-REQBUF_CREATE_ONPATH_DATA                        45284                          86166              
+REQBUF_CREATE_ONPATH_DATA                        45299                          86233              
 
 REQBUF_ONPATH_MATCH_OFFPATH_DATA                     0        0.0000                0        0.0000
 
-REQBUF_CREATE_ONPATH_IFETCH                          0                             20              
+REQBUF_CREATE_ONPATH_IFETCH                          0                             14              
 
 REQBUF_ONPATH_MATCH_OFFPATH_IFETCH                   0          -nan                0        0.0000
 
-REQBUF_CREATE_OFFPATH                             1025                           4498              
+REQBUF_CREATE_OFFPATH                             1023                           4518              
 
 ONPATH_KICKED_OUT_OFFPATH                            0                              0              
 
@@ -676,15 +676,15 @@ DIST_JUST_L1_FILL_ONPATH                             0         -nan%            
 
 DIST_REQBUF_OFFPATH_USED                             0        0.000%                0        0.000%
 DIST_REQBUF_OFFPATH_NOTUSED                          0        0.000%                0        0.000%
-DIST_REQBUF_ONPATH                               46838      100.000%            89319      100.000%
-                                                 46838      100.000%            89319      100.000%
+DIST_REQBUF_ONPATH                               45303      100.000%            86307      100.000%
+                                                 45303      100.000%            86307      100.000%
                                                   2.00         2.00              2.00         2.00
 
 DIST2_REQBUF_OFFPATH_USED_PARTIAL                    0        0.000%                0        0.000%
 DIST2_REQBUF_OFFPATH_USED_FULL                       0        0.000%                0        0.000%
 DIST2_REQBUF_OFFPATH_NOTUSED                         0        0.000%                0        0.000%
-DIST2_REQBUF_ONPATH                              46838      100.000%            89319      100.000%
-                                                 46838      100.000%            89319      100.000%
+DIST2_REQBUF_ONPATH                              45303      100.000%            86307      100.000%
+                                                 45303      100.000%            86307      100.000%
                                                   3.00         3.00              3.00         3.00
 
 DIST_ICACHE_FILL                                     0                              0              
@@ -737,85 +737,85 @@ DIST_OFFPATH_JUST_L1_NOTUSED                         0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-MLC_MISS_ONPATH_IFETCH                               2        0.006%               58        0.089%
-MLC_MISS_ONPATH_DFETCH                           26263       79.619%            52359       80.503%
-MLC_MISS_ONPATH_DSTORE                            2198        6.663%             5009        7.701%
+MLC_MISS_ONPATH_IFETCH                               2        0.006%               53        0.081%
+MLC_MISS_ONPATH_DFETCH                           26273       79.601%            52415       80.497%
+MLC_MISS_ONPATH_DSTORE                            2206        6.684%             5025        7.717%
 MLC_MISS_ONPATH_IPRF                                 0        0.000%                0        0.000%
 MLC_MISS_ONPATH_DPRF                                 0        0.000%                0        0.000%
-MLC_MISS_ONPATH_WB                                   2        0.006%               26        0.040%
-MLC_MISS_ONPATH_WB_NODIRTY                        4521       13.706%             7588       11.667%
-                                                 32986      100.000%            65040      100.000%
+MLC_MISS_ONPATH_WB                                   2        0.006%               25        0.038%
+MLC_MISS_ONPATH_WB_NODIRTY                        4523       13.704%             7596       11.666%
+                                                 33006      100.000%            65114      100.000%
                                                   1.75         1.83              1.66         1.70
 
-MLC_MISS_OFFPATH_IFETCH                              1        0.538%               10        0.851%
-MLC_MISS_OFFPATH_DFETCH                            160       86.022%              287       24.426%
-MLC_MISS_OFFPATH_DSTORE                             20       10.753%               40        3.404%
+MLC_MISS_OFFPATH_IFETCH                              1        0.535%               10        0.838%
+MLC_MISS_OFFPATH_DFETCH                            160       85.561%              287       24.037%
+MLC_MISS_OFFPATH_DSTORE                             20       10.695%               40        3.350%
 MLC_MISS_OFFPATH_IPRF                                0        0.000%                0        0.000%
 MLC_MISS_OFFPATH_DPRF                                0        0.000%                0        0.000%
-MLC_MISS_OFFPATH_WB                                  0        0.000%                1        0.085%
-MLC_MISS_OFFPATH_WB_NODIRTY                          5        2.688%              837       71.234%
-                                                   186      100.000%             1175      100.000%
-                                                  1.24         0.88              4.59         4.45
+MLC_MISS_OFFPATH_WB                                  0        0.000%                1        0.084%
+MLC_MISS_OFFPATH_WB_NODIRTY                          6        3.209%              856       71.692%
+                                                   187      100.000%             1194      100.000%
+                                                  1.26         0.95              4.61         4.47
 
-MLC_HIT_ONPATH_IFETCH                                0        0.000%                0        0.000%
-MLC_HIT_ONPATH_DFETCH                            14384       35.187%            24833       34.121%
-MLC_HIT_ONPATH_DSTORE                             2533        6.196%             4381        6.020%
+MLC_HIT_ONPATH_IFETCH                                0        0.000%                1        0.001%
+MLC_HIT_ONPATH_DFETCH                            14381       35.186%            24830       34.124%
+MLC_HIT_ONPATH_DSTORE                             2532        6.195%             4378        6.017%
 MLC_HIT_ONPATH_IPRF                                  0        0.000%                0        0.000%
 MLC_HIT_ONPATH_DPRF                                  0        0.000%                0        0.000%
-MLC_HIT_ONPATH_WB                                    0        0.000%                1        0.001%
-MLC_HIT_ONPATH_WB_NODIRTY                        23962       58.617%            43564       59.858%
-                                                 40879      100.000%            72779      100.000%
+MLC_HIT_ONPATH_WB                                    0        0.000%                0        0.000%
+MLC_HIT_ONPATH_WB_NODIRTY                        23958       58.619%            43555       59.858%
+                                                 40871      100.000%            72764      100.000%
                                                   3.99         3.89              4.05         3.94
 
 MLC_HIT_OFFPATH_IFETCH                               0        0.000%                0        0.000%
-MLC_HIT_OFFPATH_DFETCH                             538       72.215%             2305       79.428%
-MLC_HIT_OFFPATH_DSTORE                             207       27.785%              597       20.572%
+MLC_HIT_OFFPATH_DFETCH                             536       72.140%             2306       79.408%
+MLC_HIT_OFFPATH_DSTORE                             207       27.860%              598       20.592%
 MLC_HIT_OFFPATH_IPRF                                 0        0.000%                0        0.000%
 MLC_HIT_OFFPATH_DPRF                                 0        0.000%                0        0.000%
 MLC_HIT_OFFPATH_WB                                   0        0.000%                0        0.000%
 MLC_HIT_OFFPATH_WB_NODIRTY                           0        0.000%                0        0.000%
-                                                   745      100.000%             2902      100.000%
+                                                   743      100.000%             2904      100.000%
                                                   1.28         0.45              1.21         0.40
 
-L1_MISS_ONPATH_IFETCH                                2        0.009%               47        0.098%
-L1_MISS_ONPATH_DFETCH                            18874       89.264%            42353       88.246%
-L1_MISS_ONPATH_DSTORE                             1060        5.013%             3022        6.297%
+L1_MISS_ONPATH_IFETCH                                2        0.010%               45        0.095%
+L1_MISS_ONPATH_DFETCH                            19229       91.794%            43214       90.875%
+L1_MISS_ONPATH_DSTORE                             1690        8.068%             4247        8.931%
 L1_MISS_ONPATH_IPRF                                  0        0.000%                0        0.000%
 L1_MISS_ONPATH_DPRF                                  0        0.000%                0        0.000%
-L1_MISS_ONPATH_WB                                    1        0.005%               17        0.035%
-L1_MISS_ONPATH_WB_NODIRTY                         1207        5.708%             2555        5.324%
-                                                 21144      100.000%            47994      100.000%
-                                                  1.34         1.21              1.33         1.18
+L1_MISS_ONPATH_WB                                    1        0.005%               19        0.040%
+L1_MISS_ONPATH_WB_NODIRTY                           26        0.124%               28        0.059%
+                                                 20948      100.000%            47553      100.000%
+                                                  1.09         0.33              1.09         0.32
 
-L1_MISS_OFFPATH_IFETCH                               0        0.000%                7        0.823%
-L1_MISS_OFFPATH_DFETCH                              57       80.282%              122       14.336%
-L1_MISS_OFFPATH_DSTORE                              13       18.310%               24        2.820%
+L1_MISS_OFFPATH_IFETCH                               0        0.000%                7        0.808%
+L1_MISS_OFFPATH_DFETCH                              57       79.167%              122       14.088%
+L1_MISS_OFFPATH_DSTORE                              13       18.056%               27        3.118%
 L1_MISS_OFFPATH_IPRF                                 0        0.000%                0        0.000%
 L1_MISS_OFFPATH_DPRF                                 0        0.000%                0        0.000%
-L1_MISS_OFFPATH_WB                                   0        0.000%                1        0.118%
-L1_MISS_OFFPATH_WB_NODIRTY                           1        1.408%              697       81.904%
-                                                    71      100.000%              851      100.000%
-                                                  1.25         0.71              5.12         4.98
+L1_MISS_OFFPATH_WB                                   0        0.000%                1        0.115%
+L1_MISS_OFFPATH_WB_NODIRTY                           2        2.778%              709       81.871%
+                                                    72      100.000%              866      100.000%
+                                                  1.32         0.91              5.12         4.98
 
-L1_HIT_ONPATH_IFETCH                                 1        0.004%               15        0.036%
-L1_HIT_ONPATH_DFETCH                              7481       29.066%            10158       24.478%
-L1_HIT_ONPATH_DSTORE                              1142        4.437%             1997        4.812%
+L1_HIT_ONPATH_IFETCH                                 1        0.004%               12        0.031%
+L1_HIT_ONPATH_DFETCH                              7134       29.242%             9346       24.006%
+L1_HIT_ONPATH_DSTORE                               520        2.131%              788        2.024%
 L1_HIT_ONPATH_IPRF                                   0        0.000%                0        0.000%
 L1_HIT_ONPATH_DPRF                                   0        0.000%                0        0.000%
-L1_HIT_ONPATH_WB                                     1        0.004%                9        0.022%
-L1_HIT_ONPATH_WB_NODIRTY                         17113       66.489%            29320       70.652%
-                                                 25738      100.000%            41499      100.000%
-                                                  4.37         4.24              4.58         4.44
+L1_HIT_ONPATH_WB                                     1        0.004%                6        0.015%
+L1_HIT_ONPATH_WB_NODIRTY                         16740       68.618%            28780       73.924%
+                                                 24396      100.000%            38932      100.000%
+                                                  4.45         4.34              4.72         4.60
 
-L1_HIT_OFFPATH_IFETCH                                2       10.000%                5        3.030%
-L1_HIT_OFFPATH_DFETCH                               13       65.000%               20       12.121%
-L1_HIT_OFFPATH_DSTORE                                3       15.000%                6        3.636%
+L1_HIT_OFFPATH_IFETCH                                2       10.000%                5        2.959%
+L1_HIT_OFFPATH_DFETCH                               13       65.000%               20       11.834%
+L1_HIT_OFFPATH_DSTORE                                3       15.000%                3        1.775%
 L1_HIT_OFFPATH_IPRF                                  0        0.000%                0        0.000%
 L1_HIT_OFFPATH_DPRF                                  0        0.000%                0        0.000%
 L1_HIT_OFFPATH_WB                                    0        0.000%                0        0.000%
-L1_HIT_OFFPATH_WB_NODIRTY                            2       10.000%              134       81.212%
-                                                    20      100.000%              165      100.000%
-                                                  1.55         1.61              5.07         4.90
+L1_HIT_OFFPATH_WB_NODIRTY                            2       10.000%              141       83.432%
+                                                    20      100.000%              169      100.000%
+                                                  1.55         1.61              5.16         5.02
 
 DRAM_CYCLES                                          0                              0              
 
@@ -823,50 +823,50 @@ DRAM_UNBLOCK_CYCLES                                  0          -nan            
 
 DRAM_UNBLOCK_PERIODS                                 0                              0              
 
-MEM_REQ_BUFFER_FULL                                  0                           1835              
+MEM_REQ_BUFFER_FULL                                  0                             41              
 
-MEM_REQ_BUFFER_FULL_DENIED_DEMAND                    0                             20              
+MEM_REQ_BUFFER_FULL_DENIED_DEMAND                    0                             13              
 
-CORE_MEM_BLOCKED                                     0                             49              
+CORE_MEM_BLOCKED                                     0                             29              
 
 MEM_REQ_BUFFER_FULL_DENIED_IFETCH                    0         -nan%                0        0.000%
-MEM_REQ_BUFFER_FULL_DENIED_DFETCH                    0         -nan%               20       36.364%
+MEM_REQ_BUFFER_FULL_DENIED_DFETCH                    0         -nan%               13       31.707%
 MEM_REQ_BUFFER_FULL_DENIED_DSTORE                    0         -nan%                0        0.000%
 MEM_REQ_BUFFER_FULL_DENIED_IPRF                      0         -nan%                0        0.000%
 MEM_REQ_BUFFER_FULL_DENIED_DPRF                      0         -nan%                0        0.000%
-MEM_REQ_BUFFER_FULL_DENIED_WB                        0         -nan%               21       38.182%
-MEM_REQ_BUFFER_FULL_DENIED_WB_NODIRTY                0         -nan%               14       25.455%
-                                                     0         -nan%               55      100.000%
-                                                  -nan         -nan              3.80         2.91
+MEM_REQ_BUFFER_FULL_DENIED_WB                        0         -nan%               16       39.024%
+MEM_REQ_BUFFER_FULL_DENIED_WB_NODIRTY                0         -nan%               12       29.268%
+                                                     0         -nan%               41      100.000%
+                                                  -nan         -nan              4.02         3.06
 
-MEM_QUEUE_FULL                                       0                           1780              
+MEM_QUEUE_FULL                                       0                              0              
 
-MEM_REQ_BUFFER_MISS                             100354       44.068%           181215       40.088%
-MEM_REQ_BUFFER_HIT                              127370       55.932%           270830       59.912%
-                                                227724      100.000%           452045      100.000%
-                                                  0.56         0.53              0.60         0.56
+MEM_REQ_BUFFER_MISS                              98688       43.241%           178092       39.288%
+MEM_REQ_BUFFER_HIT                              129541       56.759%           275211       60.712%
+                                                228229      100.000%           453303      100.000%
+                                                  0.57         0.54              0.61         0.56
 
-MEM_REQ_FDIP_BUFFER_HIT                             20                            532              
+MEM_REQ_FDIP_BUFFER_HIT                             26                            546              
 
-MEM_REQ_FDIP_CYCLE_DELTA                           481                          65666              
+MEM_REQ_FDIP_CYCLE_DELTA                           694                          67105              
 
 MEM_REQ_DEMAND_ICACHE_BUFFER_HIT                     0                             24              
 
 MEM_REQ_DEMAND_ICACHE_CYCLE_DELTA                    0                           1247              
 
-MEM_REQ_IFETCH                                       0        0.000%               27        0.015%
-MEM_REQ_DFETCH                                   41345       41.199%            79784       44.027%
-MEM_REQ_DSTORE                                    4958        4.941%            10027        5.533%
+MEM_REQ_IFETCH                                       0        0.000%               21        0.012%
+MEM_REQ_DFETCH                                   41350       41.900%            79838       44.830%
+MEM_REQ_DSTORE                                    4965        5.031%            10041        5.638%
 MEM_REQ_IPRF                                         0        0.000%                0        0.000%
 MEM_REQ_DPRF                                         0        0.000%                0        0.000%
-MEM_REQ_WB                                           4        0.004%               60        0.033%
-MEM_REQ_WB_NODIRTY                               54047       53.856%            91317       50.392%
-                                                100354      100.000%           181215      100.000%
-                                                  3.74         3.68              3.58         3.53
+MEM_REQ_WB                                           4        0.004%               60        0.034%
+MEM_REQ_WB_NODIRTY                               52369       53.065%            88132       49.487%
+                                                 98688      100.000%           178092      100.000%
+                                                  3.70         3.65              3.53         3.49
 
-LD_NO_FORWARD                                  4112976       93.208%          8181107       93.319%
-FORWARDED_LD                                    299705        6.792%           585745        6.681%
-                                               4412681      100.000%          8766852      100.000%
+LD_NO_FORWARD                                  4113063       93.198%          8181688       93.306%
+FORWARDED_LD                                    300211        6.802%           586985        6.694%
+                                               4413274      100.000%          8768673      100.000%
                                                   0.07         0.24              0.07         0.24
 
 WRONGPATH_L1Q_REMOVALS                               0         -nan%                0         -nan%
@@ -883,18 +883,18 @@ WRONGPATH_L1FILLQ_DEMOTIONS                          0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-PROMOTION_QMLC                                       3       37.500%               46       75.410%
-PROMOTION_QL1                                        5       62.500%               15       24.590%
-                                                     8      100.000%               61      100.000%
-                                                  0.62         0.62              0.25         0.40
+PROMOTION_QMLC                                       3       50.000%               48       85.714%
+PROMOTION_QL1                                        3       50.000%                8       14.286%
+                                                     6      100.000%               56      100.000%
+                                                  0.50         0.55              0.14         0.33
 
 PROMOTION_QBUSOUT                                    0                              0              
 
 PROMOTION_QMEM                                       0                              0              
 
-PROMOTION_QL1FILL                                    2                              7              
+PROMOTION_QL1FILL                                    0                              0              
 
-PROMOTION_QMLC_FILL                                  1                              3              
+PROMOTION_QMLC_FILL                                  0                              2              
 
 NOPROMOTION_QMEM                                     0                              0              
 
@@ -905,159 +905,159 @@ NOPROMOTION_QMLC_FILL                                0         -nan%            
 
 PROMOTION_FROM_FDIP_OFF_TO_ON                        1                              8              
 
-ICACHE_FILL_CORRECT_REQ                              7       70.000%              130       13.934%
-ICACHE_FILL_INCORRECT_REQ                            3       30.000%              803       86.066%
-                                                    10      100.000%              933      100.000%
-                                                  0.30         0.44              0.86         0.81
+ICACHE_FILL_CORRECT_REQ                              6       54.545%              122       12.896%
+ICACHE_FILL_INCORRECT_REQ                            5       45.455%              824       87.104%
+                                                    11      100.000%              946      100.000%
+                                                  0.45         0.50              0.87         0.82
 
-ICACHE_FILL_CORRECT_REQ_BY_FDIP                      7       70.000%              109       11.683%
-ICACHE_FILL_INCORRECT_REQ_BY_FDIP                    3       30.000%              797       85.423%
-ICACHE_FILL_CORRECT_REQ_BY_ICACHE_DEMAND             0        0.000%               21        2.251%
-ICACHE_FILL_INCORRECT_REQ_BY_ICACHE_DEMAND             0        0.000%                6        0.643%
-                                                    10      100.000%              933      100.000%
-                                                  0.30         0.40              0.92         0.26
+ICACHE_FILL_CORRECT_REQ_BY_FDIP                      6       54.545%              106       11.205%
+ICACHE_FILL_INCORRECT_REQ_BY_FDIP                    5       45.455%              819       86.575%
+ICACHE_FILL_CORRECT_REQ_BY_ICACHE_DEMAND             0        0.000%               16        1.691%
+ICACHE_FILL_INCORRECT_REQ_BY_ICACHE_DEMAND             0        0.000%                5        0.529%
+                                                    11      100.000%              946      100.000%
+                                                  0.45         0.39              0.92         0.23
 
-ICACHE_FILL_CORRECT_REQ_BY_ON_FDIP_HIT_BY_DEMAND_LOAD             4                             38              
+ICACHE_FILL_CORRECT_REQ_BY_ON_FDIP_HIT_BY_DEMAND_LOAD             3                             39              
 
-ICACHE_FILL_CORRECT_REQ_BY_OFF_FDIP_HIT_BY_DEMAND_LOAD             0                              2              
+ICACHE_FILL_CORRECT_REQ_BY_OFF_FDIP_HIT_BY_DEMAND_LOAD             0                              3              
 
-ICACHE_FILL_INCORRECT_REQ_BY_ON_FDIP_HIT_BY_DEMAND_LOAD             1                             32              
+ICACHE_FILL_INCORRECT_REQ_BY_ON_FDIP_HIT_BY_DEMAND_LOAD             1                             34              
 
 ICACHE_FILL_INCORRECT_REQ_BY_OFF_FDIP_HIT_BY_DEMAND_LOAD             0                              0              
 
-ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA           79848622                      409510726              
+ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA           68579489                      400637972              
 
-ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_ICACHE_DEMAND             0                           5031              
+ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_ICACHE_DEMAND             0                           4422              
 
-ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_FDIP           921                          24192              
+ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_FDIP           715                          22564              
 
-ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_ON_FDIP_HIT_BY_DEMAND_LOAD           446                           4221              
+ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_ON_FDIP_HIT_BY_DEMAND_LOAD           341                           4396              
 
-ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_OFF_FDIP_HIT_BY_DEMAND_LOAD             0                             29              
+ICACHE_FILL_CORRECT_REQ_CYCLE_DELTA_BY_OFF_FDIP_HIT_BY_DEMAND_LOAD             0                             30              
 
-ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA         33678937                     2480585668              
+ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA         56074552                     2606905238              
 
-ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA_BY_ICACHE_DEMAND             0                           1723              
+ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA_BY_ICACHE_DEMAND             0                           1638              
 
-ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA_BY_FDIP           159                         235260              
+ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA_BY_FDIP           378                         235368              
 
 ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA_BY_ON_FDIP_HIT_BY_DEMAND_LOAD             0                              0              
 
 ICACHE_FILL_INCORRECT_REQ_CYCLE_DELTA_BY_OFF_FDIP_HIT_BY_DEMAND_LOAD             0                              0              
 
-MEM_REQ_INIT                                    100354                         181215              
+MEM_REQ_INIT                                     98688                         178092              
 
-MEM_REQ_COMPLETE                                 93118        0.9279           173778        0.9590
+MEM_REQ_COMPLETE                                 91573        0.9279           170784        0.9590
 
-MEM_REQ_KILLED                                    7236        0.0721             7437        0.0410
+MEM_REQ_KILLED                                    7115        0.0721             7308        0.0410
 
-MEM_REQ_COMPLETE_MLC                             46145        0.4598            83269        0.4595
+MEM_REQ_COMPLETE_MLC                             46137        0.4675            83264        0.4675
 
-MEM_REQ_COMPLETE_L1                              17139        0.1708            29348        0.1620
+MEM_REQ_COMPLETE_L1                              16766        0.1699            28808        0.1618
 
-MEM_REQ_COMPLETE_MEM                             29834        0.2973            61161        0.3375
+MEM_REQ_COMPLETE_MEM                             28670        0.2905            58712        0.3297
 
-MEM_REQ_INIT_ONPATH                              99329        0.9898           176717        0.9752
+MEM_REQ_INIT_ONPATH                              97665        0.9896           173574        0.9746
 
-MEM_REQ_INIT_OFFPATH                              1025        0.0102             4498        0.0248
+MEM_REQ_INIT_OFFPATH                              1023        0.0104             4518        0.0254
 
-MEM_REQ_COMPLETE_ONPATH                          92340        0.9916           169997        0.9782
+MEM_REQ_COMPLETE_ONPATH                          90796        0.9915           166983        0.9777
 
-MEM_REQ_COMPLETE_OFFPATH                           778        0.0084             3781        0.0218
+MEM_REQ_COMPLETE_OFFPATH                           777        0.0085             3801        0.0223
 
-MEM_REQ_INIT_IFETCH                                  0        0.000%               27        0.030%
-MEM_REQ_INIT_DFETCH                              41345       89.273%            79784       87.922%
-MEM_REQ_INIT_DSTORE                               4958       10.705%            10027       11.050%
+MEM_REQ_INIT_IFETCH                                  0        0.000%               21        0.023%
+MEM_REQ_INIT_DFETCH                              41350       89.259%            79838       87.903%
+MEM_REQ_INIT_DSTORE                               4965       10.718%            10041       11.055%
 MEM_REQ_INIT_IPRF                                    0        0.000%                0        0.000%
 MEM_REQ_INIT_DPRF                                    0        0.000%                0        0.000%
 MEM_REQ_INIT_WB                                      4        0.009%               60        0.066%
-MEM_REQ_INIT_WB_NODIRTY                              6        0.013%              846        0.932%
-                                                 46313      100.000%            90744      100.000%
-                                                  1.11         0.32              1.16         0.58
+MEM_REQ_INIT_WB_NODIRTY                              7        0.015%              865        0.952%
+                                                 46326      100.000%            90825      100.000%
+                                                  1.11         0.32              1.16         0.59
 
-MEM_REQ_COMPLETE_IFETCH                           1556        1.550%             3149        1.737%
-MEM_REQ_COMPLETE_DFETCH                          93846       93.498%           167233       92.250%
-MEM_REQ_COMPLETE_DSTORE                           4966        4.948%            10043        5.540%
+MEM_REQ_COMPLETE_IFETCH                              5        0.005%               71        0.040%
+MEM_REQ_COMPLETE_DFETCH                          93712       94.958%           167105       93.831%
+MEM_REQ_COMPLETE_DSTORE                           4965        5.031%            10041        5.638%
 MEM_REQ_COMPLETE_IPRF                                0        0.000%                0        0.000%
 MEM_REQ_COMPLETE_DPRF                                0        0.000%                0        0.000%
-MEM_REQ_COMPLETE_WB                                  1        0.001%               27        0.015%
-MEM_REQ_COMPLETE_WB_NODIRTY                          3        0.003%              830        0.458%
-                                                100372      100.000%           181282      100.000%
-                                                  1.03         0.22              1.06         0.41
+MEM_REQ_COMPLETE_WB                                  2        0.002%               27        0.015%
+MEM_REQ_COMPLETE_WB_NODIRTY                          4        0.004%              848        0.476%
+                                                 98688      100.000%           178092      100.000%
+                                                  1.05         0.22              1.08         0.42
 
-MEM_REQ_KILLED_IFETCH                            46787      100.000%            82967      100.000%
+MEM_REQ_KILLED_IFETCH                            45247      100.000%            79959      100.000%
 MEM_REQ_KILLED_DFETCH                                0        0.000%                0        0.000%
 MEM_REQ_KILLED_DSTORE                                0        0.000%                0        0.000%
 MEM_REQ_KILLED_IPRF                                  0        0.000%                0        0.000%
 MEM_REQ_KILLED_DPRF                                  0        0.000%                0        0.000%
 MEM_REQ_KILLED_WB                                    0        0.000%                0        0.000%
 MEM_REQ_KILLED_WB_NODIRTY                            0        0.000%                0        0.000%
-                                                 46787      100.000%            82967      100.000%
+                                                 45247      100.000%            79959      100.000%
                                                   0.00         0.00              0.00         0.00
 
-MEM_REQ_INIT_OFFPATH_IFETCH                       7236       87.592%             7444       62.371%
-MEM_REQ_INIT_OFFPATH_DFETCH                        783        9.478%             2971       24.893%
-MEM_REQ_INIT_OFFPATH_DSTORE                        236        2.857%              674        5.647%
+MEM_REQ_INIT_OFFPATH_IFETCH                       7115       87.429%             7315       61.855%
+MEM_REQ_INIT_OFFPATH_DFETCH                        780        9.585%             2972       25.131%
+MEM_REQ_INIT_OFFPATH_DSTORE                        236        2.900%              674        5.699%
 MEM_REQ_INIT_OFFPATH_IPRF                            0        0.000%                0        0.000%
 MEM_REQ_INIT_OFFPATH_DPRF                            0        0.000%                0        0.000%
 MEM_REQ_INIT_OFFPATH_WB                              0        0.000%                0        0.000%
-MEM_REQ_INIT_OFFPATH_WB_NODIRTY                      6        0.073%              846        7.088%
-                                                  8261      100.000%            11935      100.000%
-                                                  0.16         0.44              0.79         1.44
+MEM_REQ_INIT_OFFPATH_WB_NODIRTY                      7        0.086%              865        7.314%
+                                                  8138      100.000%            11826      100.000%
+                                                  0.16         0.44              0.80         1.45
 
-MEM_REQ_INIT_ONPATH_IFETCH                           0        0.000%               20        0.023%
-MEM_REQ_INIT_ONPATH_DFETCH                       40562       89.565%            76813       89.063%
-MEM_REQ_INIT_ONPATH_DSTORE                        4722       10.427%             9353       10.845%
+MEM_REQ_INIT_ONPATH_IFETCH                           0        0.000%               14        0.016%
+MEM_REQ_INIT_ONPATH_DFETCH                       40570       89.553%            76866       89.061%
+MEM_REQ_INIT_ONPATH_DSTORE                        4729       10.439%             9367       10.853%
 MEM_REQ_INIT_ONPATH_IPRF                             0        0.000%                0        0.000%
 MEM_REQ_INIT_ONPATH_DPRF                             0        0.000%                0        0.000%
 MEM_REQ_INIT_ONPATH_WB                               4        0.009%               60        0.070%
 MEM_REQ_INIT_ONPATH_WB_NODIRTY                       0        0.000%                0        0.000%
-                                                 45288      100.000%            86246      100.000%
+                                                 45303      100.000%            86307      100.000%
                                                   1.10         0.31              1.11         0.33
 
-MEM_REQ_MATCH_IFETCH                              1558        0.960%             3153        0.994%
-MEM_REQ_MATCH_DFETCH                            152213       93.754%           295163       93.091%
-MEM_REQ_MATCH_DSTORE                              8147        5.018%            17780        5.608%
+MEM_REQ_MATCH_IFETCH                                 8        0.005%               80        0.026%
+MEM_REQ_MATCH_DFETCH                            151809       94.599%           294617       93.942%
+MEM_REQ_MATCH_DSTORE                              8216        5.120%            17940        5.720%
 MEM_REQ_MATCH_IPRF                                   0        0.000%                0        0.000%
 MEM_REQ_MATCH_DPRF                                   0        0.000%                0        0.000%
-MEM_REQ_MATCH_WB                                     8        0.005%              106        0.033%
-MEM_REQ_MATCH_WB_NODIRTY                           427        0.263%              869        0.274%
-                                                162353      100.000%           317071      100.000%
-                                                  1.05         0.34              1.06         0.36
+MEM_REQ_MATCH_WB                                     6        0.004%              106        0.034%
+MEM_REQ_MATCH_WB_NODIRTY                           437        0.272%              873        0.278%
+                                                160476      100.000%           313616      100.000%
+                                                  1.06         0.34              1.07         0.36
 
-MEM_REQ_COMPLETE_OFFPATH_IFETCH                      2        0.257%               12        0.317%
-MEM_REQ_COMPLETE_OFFPATH_DFETCH                    561       72.108%             2346       62.047%
-MEM_REQ_COMPLETE_OFFPATH_DSTORE                    212       27.249%              607       16.054%
+MEM_REQ_COMPLETE_OFFPATH_IFETCH                      2        0.257%               12        0.316%
+MEM_REQ_COMPLETE_OFFPATH_DFETCH                    559       71.943%             2347       61.747%
+MEM_REQ_COMPLETE_OFFPATH_DSTORE                    212       27.284%              608       15.996%
 MEM_REQ_COMPLETE_OFFPATH_IPRF                        0        0.000%                0        0.000%
 MEM_REQ_COMPLETE_OFFPATH_DPRF                        0        0.000%                0        0.000%
 MEM_REQ_COMPLETE_OFFPATH_WB                          0        0.000%                2        0.053%
-MEM_REQ_COMPLETE_OFFPATH_WB_NODIRTY                  3        0.386%              814       21.529%
-                                                   778      100.000%             3781      100.000%
-                                                  1.29         0.54              2.24         2.26
+MEM_REQ_COMPLETE_OFFPATH_WB_NODIRTY                  4        0.515%              832       21.889%
+                                                   777      100.000%             3801      100.000%
+                                                  1.30         0.57              2.25         2.27
 
-MEM_REQ_COMPLETE_ONPATH_IFETCH                       4        0.009%               64        0.074%
-MEM_REQ_COMPLETE_ONPATH_DFETCH                   40794       89.553%            77489       89.037%
-MEM_REQ_COMPLETE_ONPATH_DSTORE                    4754       10.436%             9436       10.842%
+MEM_REQ_COMPLETE_ONPATH_IFETCH                       3        0.007%               59        0.068%
+MEM_REQ_COMPLETE_ONPATH_DFETCH                   40791       89.554%            77491       89.046%
+MEM_REQ_COMPLETE_ONPATH_DSTORE                    4753       10.435%             9433       10.840%
 MEM_REQ_COMPLETE_ONPATH_IPRF                         0        0.000%                0        0.000%
 MEM_REQ_COMPLETE_ONPATH_DPRF                         0        0.000%                0        0.000%
-MEM_REQ_COMPLETE_ONPATH_WB                           1        0.002%               25        0.029%
+MEM_REQ_COMPLETE_ONPATH_WB                           2        0.004%               25        0.029%
 MEM_REQ_COMPLETE_ONPATH_WB_NODIRTY                   0        0.000%               16        0.018%
-                                                 45553      100.000%            87030      100.000%
-                                                  1.10         0.31              1.11         0.33
+                                                 45549      100.000%            87024      100.000%
+                                                  1.10         0.31              1.11         0.32
 
-MEM_REQ_COMPLETE_MEM_IFETCH                      46793       62.014%            83043       58.621%
-MEM_REQ_COMPLETE_MEM_DFETCH                      26433       35.031%            52697       37.199%
-MEM_REQ_COMPLETE_MEM_DSTORE                       2226        2.950%             5065        3.575%
+MEM_REQ_COMPLETE_MEM_IFETCH                      45252       61.220%            80029       57.711%
+MEM_REQ_COMPLETE_MEM_DFETCH                      26433       35.760%            52702       38.005%
+MEM_REQ_COMPLETE_MEM_DSTORE                       2226        3.011%             5065        3.653%
 MEM_REQ_COMPLETE_MEM_IPRF                            0        0.000%                0        0.000%
 MEM_REQ_COMPLETE_MEM_DPRF                            0        0.000%                0        0.000%
-MEM_REQ_COMPLETE_MEM_WB                              1        0.001%               26        0.018%
-MEM_REQ_COMPLETE_MEM_WB_NODIRTY                      3        0.004%              830        0.586%
-                                                 75456      100.000%           141661      100.000%
-                                                  0.41         0.45              0.48         0.61
+MEM_REQ_COMPLETE_MEM_WB                              2        0.003%               27        0.019%
+MEM_REQ_COMPLETE_MEM_WB_NODIRTY                      4        0.005%              848        0.612%
+                                                 73917      100.000%           138671      100.000%
+                                                  0.42         0.45              0.49         0.61
 
-MEM_REQ_COMPLETE_MEM_BW_PREFETCHABLE              1735                           3576              
+MEM_REQ_COMPLETE_MEM_BW_PREFETCHABLE                 0                              0              
 
-MEM_REQ_COMPLETE_MEM_MATCHED_BW_PREF                 5                             20              
+MEM_REQ_COMPLETE_MEM_MATCHED_BW_PREF                 0                              0              
 
 MEM_REQ_COMPLETE_L1_IFETCH                           0         -nan%                0         -nan%
 MEM_REQ_COMPLETE_L1_DFETCH                           0         -nan%                0         -nan%
@@ -1069,19 +1069,19 @@ MEM_REQ_COMPLETE_L1_WB_NODIRTY                       0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-MEM_REQ_COMPLETE_MLC_IFETCH                      17139       49.249%            29348       47.747%
-MEM_REQ_COMPLETE_MLC_DFETCH                      14922       42.878%            27138       44.152%
-MEM_REQ_COMPLETE_MLC_DSTORE                       2740        7.873%             4978        8.099%
+MEM_REQ_COMPLETE_MLC_IFETCH                      16766       48.707%            28809       47.289%
+MEM_REQ_COMPLETE_MLC_DFETCH                      14917       43.336%            27136       44.543%
+MEM_REQ_COMPLETE_MLC_DSTORE                       2739        7.957%             4976        8.168%
 MEM_REQ_COMPLETE_MLC_IPRF                            0        0.000%                0        0.000%
 MEM_REQ_COMPLETE_MLC_DPRF                            0        0.000%                0        0.000%
-MEM_REQ_COMPLETE_MLC_WB                              0        0.000%                1        0.002%
+MEM_REQ_COMPLETE_MLC_WB                              0        0.000%                0        0.000%
 MEM_REQ_COMPLETE_MLC_WB_NODIRTY                      0        0.000%                0        0.000%
-                                                 34801      100.000%            61465      100.000%
-                                                  0.59         0.48              0.60         0.48
+                                                 34422      100.000%            60921      100.000%
+                                                  0.59         0.48              0.61         0.48
 
-CORE_MLP_CLUSTERS                                28483                          51152              
+CORE_MLP_CLUSTERS                                28481                          51151              
 
-CORE_MLP                                       2942395                        6753803              
+CORE_MLP                                       2957912                        6714633              
 
 CORE_MLP_IFETCH                                      0                              0              
 
@@ -1097,41 +1097,41 @@ CORE_MLP_WB                                          0                          
 
 CORE_MLP_WB_NODIRTY                                  0                              0              
 
-CORE_MLP_0                                     4782964       65.982%          9422324       63.661%
-CORE_MLP_1                                     2054694       28.345%          4353994       29.417%
-CORE_MLP_2                                      371575        5.126%           921637        6.227%
-CORE_MLP_3                                       26382        0.364%            67997        0.459%
-CORE_MLP_4                                        8987        0.124%            12846        0.087%
-CORE_MLP_5                                        2218        0.031%             4749        0.032%
-CORE_MLP_6                                         767        0.011%             2411        0.016%
-CORE_MLP_7                                         336        0.005%              981        0.007%
-CORE_MLP_8                                         272        0.004%              796        0.005%
-CORE_MLP_9                                          61        0.001%              611        0.004%
-CORE_MLP_10                                        144        0.002%              608        0.004%
-CORE_MLP_11                                         17        0.000%              411        0.003%
-CORE_MLP_12                                         17        0.000%              474        0.003%
-CORE_MLP_13                                         17        0.000%              596        0.004%
-CORE_MLP_14                                        157        0.002%              717        0.005%
-CORE_MLP_15                                         18        0.000%              460        0.003%
-CORE_MLP_16                                         17        0.000%              383        0.003%
-CORE_MLP_17                                         32        0.000%              481        0.003%
-CORE_MLP_18                                         79        0.001%              522        0.004%
-CORE_MLP_19                                         31        0.000%              468        0.003%
-CORE_MLP_20                                         66        0.001%              518        0.003%
-CORE_MLP_21                                          1        0.000%              838        0.006%
-CORE_MLP_22                                          0        0.000%             1174        0.008%
-CORE_MLP_23                                          0        0.000%             1532        0.010%
-CORE_MLP_24                                          0        0.000%             1220        0.008%
-CORE_MLP_25                                          0        0.000%              972        0.007%
-CORE_MLP_26                                          0        0.000%              324        0.002%
-CORE_MLP_27                                          0        0.000%              231        0.002%
-CORE_MLP_28                                          0        0.000%              478        0.003%
+CORE_MLP_0                                     4776776       65.472%          9429956       63.399%
+CORE_MLP_1                                     2128752       29.177%          4466551       30.029%
+CORE_MLP_2                                      371666        5.094%           911746        6.130%
+CORE_MLP_3                                       13568        0.186%            43683        0.294%
+CORE_MLP_4                                        2287        0.031%             5148        0.035%
+CORE_MLP_5                                         506        0.007%             1292        0.009%
+CORE_MLP_6                                         341        0.005%              975        0.007%
+CORE_MLP_7                                         280        0.004%             1042        0.007%
+CORE_MLP_8                                         201        0.003%              733        0.005%
+CORE_MLP_9                                          84        0.001%              703        0.005%
+CORE_MLP_10                                         77        0.001%              576        0.004%
+CORE_MLP_11                                         86        0.001%              514        0.003%
+CORE_MLP_12                                         92        0.001%              468        0.003%
+CORE_MLP_13                                         81        0.001%              532        0.004%
+CORE_MLP_14                                         81        0.001%              561        0.004%
+CORE_MLP_15                                         97        0.001%              404        0.003%
+CORE_MLP_16                                         81        0.001%              882        0.006%
+CORE_MLP_17                                         81        0.001%              322        0.002%
+CORE_MLP_18                                         92        0.001%              325        0.002%
+CORE_MLP_19                                         86        0.001%              370        0.002%
+CORE_MLP_20                                         81        0.001%              578        0.004%
+CORE_MLP_21                                         86        0.001%              837        0.006%
+CORE_MLP_22                                         92        0.001%             1139        0.008%
+CORE_MLP_23                                         81        0.001%             1573        0.011%
+CORE_MLP_24                                         82        0.001%             1163        0.008%
+CORE_MLP_25                                         96        0.001%              937        0.006%
+CORE_MLP_26                                         81        0.001%              302        0.002%
+CORE_MLP_27                                         32        0.000%              211        0.001%
+CORE_MLP_28                                          0        0.000%              556        0.004%
 CORE_MLP_29                                          0        0.000%                0        0.000%
 CORE_MLP_30                                          0        0.000%                0        0.000%
 CORE_MLP_31                                          0        0.000%                0        0.000%
 CORE_MLP_32                                          0        0.000%                0        0.000%
-                                               7248852      100.000%         14800753      100.000%
-                                                  0.41         0.55              0.46         0.79
+                                               7295946      100.000%         14874079      100.000%
+                                                  0.41         0.57              0.45         0.77
 
 MEM_QUEUE_OCC_0                                      0         -nan%                0         -nan%
 MEM_QUEUE_OCC_4                                      0         -nan%                0         -nan%
@@ -1190,14 +1190,14 @@ L0_LD_CACHE_AVAIL                                    0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-MLC_LD_BANK_BLOCK                                   12        0.026%               27        0.030%
-MLC_LD_BANK_AVAIL                                46313       99.974%            90744       99.970%
-                                                 46325      100.000%            90771      100.000%
+MLC_LD_BANK_BLOCK                                   12        0.026%               26        0.029%
+MLC_LD_BANK_AVAIL                                46326       99.974%            90825       99.971%
+                                                 46338      100.000%            90851      100.000%
                                                   1.00         1.00              1.00         1.00
 
 MLC_ST_BANK_BLOCK                                    0        0.000%                0        0.000%
-MLC_ST_BANK_AVAIL                                28483      100.000%            51152      100.000%
-                                                 28483      100.000%            51152      100.000%
+MLC_ST_BANK_AVAIL                                28481      100.000%            51151      100.000%
+                                                 28481      100.000%            51151      100.000%
                                                   1.00         1.00              1.00         1.00
 
 MLC_LD_CACHE_BLOCK                                   0         -nan%                0         -nan%
@@ -1210,14 +1210,14 @@ MLC_ST_CACHE_AVAIL                                   0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-L1_LD_BANK_BLOCK                                   940        3.019%             4031        6.133%
-L1_LD_BANK_AVAIL                                 30201       96.981%            61700       93.867%
-                                                 31141      100.000%            65731      100.000%
-                                                  0.97         0.96              0.94         0.91
+L1_LD_BANK_BLOCK                                   137        0.476%             2596        4.234%
+L1_LD_BANK_AVAIL                                 28670       99.524%            58712       95.766%
+                                                 28807      100.000%            61308      100.000%
+                                                  1.00         0.99              0.96         0.94
 
-L1_ST_BANK_BLOCK                                     2        0.012%                2        0.007%
-L1_ST_BANK_AVAIL                                 16772       99.988%            28809       99.993%
-                                                 16774      100.000%            28811      100.000%
+L1_ST_BANK_BLOCK                                     3        0.018%                3        0.010%
+L1_ST_BANK_AVAIL                                 16766       99.982%            28808       99.990%
+                                                 16769      100.000%            28811      100.000%
                                                   1.00         1.00              1.00         1.00
 
 L1_LD_CACHE_BLOCK                                    0         -nan%                0         -nan%
@@ -1247,41 +1247,41 @@ MEM_PF_BANK_AVAIL                                    0         -nan%            
 
 L0_FILL                                              0                              0              
 
-L1_FILL                                          21189       99.877%            48817       99.943%
-L1_WB_FILL                                          26        0.123%               28        0.057%
-                                                 21215      100.000%            48845      100.000%
-                                                  0.00         0.03              0.00         0.02
+L1_FILL                                          20994       99.876%            48391       99.942%
+L1_WB_FILL                                          26        0.124%               28        0.058%
+                                                 21020      100.000%            48419      100.000%
+                                                  0.00         0.04              0.00         0.02
 
-L1_DEMAND_FILL                                   20006       94.417%            46283       94.809%
-L1_PREF_FILL                                      1183        5.583%             2534        5.191%
-                                                 21189      100.000%            48817      100.000%
-                                                  0.06         0.22              0.05         0.22
+L1_DEMAND_FILL                                   20994      100.000%            48391      100.000%
+L1_PREF_FILL                                         0        0.000%                0        0.000%
+                                                 20994      100.000%            48391      100.000%
+                                                  0.00         0.00              0.00         0.00
 
-MLC_FILL                                         28669       86.378%            58694       88.552%
-MLC_WB_FILL                                       4521       13.622%             7588       11.448%
-                                                 33190      100.000%            66282      100.000%
+MLC_FILL                                         28670       86.374%            58712       88.544%
+MLC_WB_FILL                                       4523       13.626%             7596       11.456%
+                                                 33193      100.000%            66308      100.000%
                                                   0.14         0.32              0.11         0.30
 
-MLC_DEMAND_FILL                                  28651       99.937%            58627       99.886%
-MLC_PREF_FILL                                       18        0.063%               67        0.114%
-                                                 28669      100.000%            58694      100.000%
-                                                  0.00         0.03              0.00         0.03
+MLC_DEMAND_FILL                                  28670      100.000%            58712      100.000%
+MLC_PREF_FILL                                        0        0.000%                0        0.000%
+                                                 28670      100.000%            58712      100.000%
+                                                  0.00         0.00              0.00         0.00
 
-NORESET_L1_FILL                                  21215                          48845              
+NORESET_L1_FILL                                  21020                          48419              
 
-NORESET_L1_FILL_NONPREF                          20030                          45596              
+NORESET_L1_FILL_NONPREF                          21017                          47690              
 
-NORESET_L1_FILL_PREF                              1185                           3249              
+NORESET_L1_FILL_PREF                                 3                            729              
 
-NORESET_L1_EVICT                                 15293                          16191              
+NORESET_L1_EVICT                                 14917                          15771              
 
-NORESET_L1_EVICT_NONPREF                         14505                          15358              
+NORESET_L1_EVICT_NONPREF                         14917                          15771              
 
-NORESET_L1_EVICT_PREF_USED                         610                            640              
+NORESET_L1_EVICT_PREF_USED                           0                              0              
 
-NORESET_L1_EVICT_PREF_UNUSED                       178                            193              
+NORESET_L1_EVICT_PREF_UNUSED                         0                              0              
 
-NORESET_L1_PREF_USED                               982                           2042              
+NORESET_L1_PREF_USED                                 0                              0              
 
 ORACLE_OFFPATH_DC_FILL                               0                              0              
 
@@ -1350,13 +1350,13 @@ L1_PREF_CACHE_FILL                                   0                          
 
 L1_PREF_MOVE_L1                                      0         -nan%                0         -nan%
 
-OFF_PATH_CONFIRMED                                6025                          15674              
+OFF_PATH_CONFIRMED                                5729                          14705              
 
 OFF_PATH_NO_FILL_L1                                  0                              0              
 
 WB_L1_MISS_FILL_L1                                  26                             28              
 
-WB_MLC_MISS_FILL_MLC                              4521                           7588              
+WB_MLC_MISS_FILL_MLC                              4523                           7596              
 
 ICACHE_EVICT_REQ_WB_L1                               0                              0              
 
@@ -1368,22 +1368,22 @@ L1_FILL_SKIPPED                                      0                          
 
 MLC_FILL_SKIPPED                                     0                              0              
 
-DCACHE_FILL                                      46321                          89878              
+DCACHE_FILL                                      46315                          89879              
 
-DCACHE_WB_REQ                                    28888        0.6236            51764        0.5759
+DCACHE_WB_REQ                                    28886        0.6237            51762        0.5759
 
-DCACHE_WB_REQ_DIRTY                              28888      100.000%            51764      100.000%
+DCACHE_WB_REQ_DIRTY                              28886      100.000%            51762      100.000%
 DCACHE_WB_REQ_NODIRTY                                0        0.000%                0        0.000%
-                                                 28888      100.000%            51764      100.000%
+                                                 28886      100.000%            51762      100.000%
                                                   0.00         0.00              0.00         0.00
 
-ICACHE_FILL                                          7                            130              
+ICACHE_FILL                                          6                            122              
 
 ICACHE_WB_REQ                                        0        0.0000                0        0.0000
 
-L1_FILL_DIRTY                                     7236        0.3415             7437        0.1523
+L1_FILL_DIRTY                                     7115        0.3389             7308        0.1510
 
-MLC_FILL_DIRTY                                   16772        0.5850            28809        0.4908
+MLC_FILL_DIRTY                                   16766        0.5848            28808        0.4907
 
 ICACHE_UNUSEFUL_CL_CYC                               0                              0              
 
@@ -1443,11 +1443,11 @@ PREF_L1_HIT_ON_INSERT                                0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-L1_NEWREQ_MATCHED_MLC_REQ                            0                              1              
+L1_NEWREQ_MATCHED_MLC_REQ                            0                              0              
 
-MLC_NEWREQ_MATCHED_L2_PREF                          18                             67              
+MLC_NEWREQ_MATCHED_L2_PREF                           0                              0              
 
-MLC_NEWREQ_MATCHED_L2_PREF_MLC_HIT                   0        0.0000                0        0.0000
+MLC_NEWREQ_MATCHED_L2_PREF_MLC_HIT                   0          -nan                0          -nan
 
 NEWREQ_WB_MATCH_IGNORED                              0                              0              
 
@@ -1496,8 +1496,8 @@ DEMAND_MATCH_WB_ND_WB_NODIRTY                        0         -nan%            
 WB_MATCH_DEMAND                                      0        0.000%                0        0.000%
 WB_MATCH_PREF                                        0        0.000%                0        0.000%
 WB_MATCH_WB                                          0        0.000%                0        0.000%
-WB_MATCH_WB_FILTERED                            104221      100.000%           217196      100.000%
-                                                104221      100.000%           217196      100.000%
+WB_MATCH_WB_FILTERED                            104021      100.000%           216943      100.000%
+                                                104021      100.000%           216943      100.000%
                                                   3.00         3.00              3.00         3.00
 
 WB_COMING_BACK_FROM_MEM                              0                              0              
@@ -1506,9 +1506,9 @@ WB_COMING_BACK_FROM_L1                               0                          
 
 WB_COMING_BACK_FROM_MLC                              0                              0              
 
-MEM_REQ_MATCH_OFF_PATH_HIT_BY_ON_PATH              246        0.194%              692        0.257%
-MEM_REQ_MATCH_OFF_PATH_HIT_BY_ON_PATH_ETC        126699       99.806%           268943       99.743%
-                                                126945      100.000%           269635      100.000%
+MEM_REQ_MATCH_OFF_PATH_HIT_BY_ON_PATH              245        0.190%              691        0.252%
+MEM_REQ_MATCH_OFF_PATH_HIT_BY_ON_PATH_ETC        128865       99.810%           273339       99.748%
+                                                129110      100.000%           274030      100.000%
                                                   1.00         1.00              1.00         1.00
 
 TOTAL_ONPATH_ICACHE_FILLS                            0                              0              
@@ -1523,9 +1523,9 @@ PER1K_ONPATH_DCACHE_FILLS                            0        0.0000            
 
 PER1K_ONPATH_L1_FILLS                                0        0.0000                0        0.0000
 
-PER1K_L1_DEMAND_MISS_ONPATH                      19936        0.9968            45422        2.2711
+PER1K_L1_DEMAND_MISS_ONPATH                      20921        1.0460            47506        2.3753
 
-PER1K_L1_DEMAND_MISS_OFFPATH                        70        0.0035              153        0.0076
+PER1K_L1_DEMAND_MISS_OFFPATH                        70        0.0035              156        0.0078
 
 L2_IDEAL_FILL_L1                                     0         -nan%                0         -nan%
 L2_IDEAL_MISS_L2                                     0         -nan%                0         -nan%
@@ -1582,89 +1582,89 @@ ONE_MORE_DISCARDED_MEM_REQ_FULL                      0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-PREF_L1_TOTAL_SENT                                1183                           2534              
+PREF_L1_TOTAL_SENT                                   0                              0              
 
-PREF_L1_TOTAL_USED                                 982       83.009%             2042       89.092%
-PREF_L1_TOTAL_PARTIAL_USED                          18        1.522%               67        2.923%
-PREF_L1_TOTAL_NOT_USED                             183       15.469%              183        7.984%
-PREF_L1_TOTAL_DROPPED                                0        0.000%                0        0.000%
-                                                  1183      100.000%             2292      100.000%
-                                                  0.32         0.66              0.19         0.53
+PREF_L1_TOTAL_USED                                   0         -nan%                0         -nan%
+PREF_L1_TOTAL_PARTIAL_USED                           0         -nan%                0         -nan%
+PREF_L1_TOTAL_NOT_USED                               0         -nan%                0         -nan%
+PREF_L1_TOTAL_DROPPED                                0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
 
 PREF_MLC_TOTAL_SENT                                  0                              0              
 
-PREF_MLC_TOTAL_USED                                 11       37.931%              109       61.932%
-PREF_MLC_TOTAL_PARTIAL_USED                         18       62.069%               67       38.068%
+PREF_MLC_TOTAL_USED                                 10      100.000%              108      100.000%
+PREF_MLC_TOTAL_PARTIAL_USED                          0        0.000%                0        0.000%
 PREF_MLC_TOTAL_NOT_USED                              0        0.000%                0        0.000%
 PREF_MLC_TOTAL_DROPPED                               0        0.000%                0        0.000%
-                                                    29      100.000%              176      100.000%
-                                                  0.62         0.30              0.38         0.38
+                                                    10      100.000%              108      100.000%
+                                                  0.00         0.00              0.00         0.00
 
 CORE_MLC_PREF_REQ_MISS                               0        0.000%                0        0.000%
-CORE_MLC_DEMAND_MISS                             28644       86.350%            57763       87.236%
-CORE_MLC_WB_MISS                                  4528       13.650%             8452       12.764%
-                                                 33172      100.000%            66215      100.000%
+CORE_MLC_DEMAND_MISS                             28662       86.350%            57830       87.214%
+CORE_MLC_WB_MISS                                  4531       13.650%             8478       12.786%
+                                                 33193      100.000%            66308      100.000%
                                                   1.14         0.54              1.13         0.52
 
 CORE_MLC_PREF_REQ_HIT                                0        0.000%                0        0.000%
-CORE_MLC_DEMAND_HIT                              17662       42.432%            32116       42.436%
-CORE_MLC_WB_HIT                                  23962       57.568%            43565       57.564%
-                                                 41624      100.000%            75681      100.000%
+CORE_MLC_DEMAND_HIT                              17656       42.428%            32113       42.439%
+CORE_MLC_WB_HIT                                  23958       57.572%            43555       57.561%
+                                                 41614      100.000%            75668      100.000%
                                                   1.58         1.29              1.58         1.29
 
-CORE_MLC_HIT                                     17662       38.142%            32116       35.732%
-CORE_MLC_MISS                                    28644       61.858%            57763       64.268%
-                                                 46306      100.000%            89879      100.000%
+CORE_MLC_HIT                                     17656       38.119%            32113       35.704%
+CORE_MLC_MISS                                    28662       61.881%            57830       64.296%
+                                                 46318      100.000%            89943      100.000%
                                                   0.62         0.57              0.64         0.59
 
-CORE_MLC_FILL                                    28669       86.378%            58694       88.552%
-CORE_MLC_WB_FILL                                  4521       13.622%             7588       11.448%
-                                                 33190      100.000%            66282      100.000%
+CORE_MLC_FILL                                    28670       86.374%            58712       88.544%
+CORE_MLC_WB_FILL                                  4523       13.626%             7596       11.456%
+                                                 33193      100.000%            66308      100.000%
                                                   0.14         0.32              0.11         0.30
 
-CORE_MLC_DEMAND_FILL                             28651       99.937%            58627       99.886%
-CORE_MLC_PREF_FILL                                  18        0.063%               67        0.114%
-                                                 28669      100.000%            58694      100.000%
-                                                  0.00         0.03              0.00         0.03
+CORE_MLC_DEMAND_FILL                             28670      100.000%            58712      100.000%
+CORE_MLC_PREF_FILL                                   0        0.000%                0        0.000%
+                                                 28670      100.000%            58712      100.000%
+                                                  0.00         0.00              0.00         0.00
 
-CORE_MLC_PREF_FILL_USED                             11       37.931%              109       61.932%
-CORE_MLC_PREF_FILL_PARTIAL_USED                     18       62.069%               67       38.068%
+CORE_MLC_PREF_FILL_USED                             10      100.000%              108      100.000%
+CORE_MLC_PREF_FILL_PARTIAL_USED                      0        0.000%                0        0.000%
 CORE_MLC_PREF_FILL_NOT_USED                          0        0.000%                0        0.000%
-                                                    29      100.000%              176      100.000%
-                                                  0.62         0.30              0.38         0.38
+                                                    10      100.000%              108      100.000%
+                                                  0.00         0.00              0.00         0.00
 
-CORE_L1_PREF_REQ_MISS                             1183        5.576%             2534        5.188%
-CORE_L1_DEMAND_MISS                              20004       94.292%            45568       93.291%
-CORE_L1_WB_MISS                                     28        0.132%              743        1.521%
-                                                 21215      100.000%            48845      100.000%
-                                                  0.95         0.07              0.96         0.18
+CORE_L1_PREF_REQ_MISS                                0        0.000%                0        0.000%
+CORE_L1_DEMAND_MISS                              20991       99.862%            47662       98.437%
+CORE_L1_WB_MISS                                     29        0.138%              757        1.563%
+                                                 21020      100.000%            48419      100.000%
+                                                  1.00         0.05              1.02         0.18
 
-CORE_L1_PREF_REQ_HIT                               367        1.425%              539        1.294%
-CORE_L1_DEMAND_HIT                                8642       33.551%            12201       29.284%
-CORE_L1_WB_HIT                                   16749       65.024%            28924       69.422%
-                                                 25758      100.000%            41664      100.000%
-                                                  1.64         1.40              1.68         1.47
+CORE_L1_PREF_REQ_HIT                                 0        0.000%                0        0.000%
+CORE_L1_DEMAND_HIT                                7673       31.426%            10174       26.020%
+CORE_L1_WB_HIT                                   16743       68.574%            28927       73.980%
+                                                 24416      100.000%            39101      100.000%
+                                                  1.69         1.47              1.74         1.56
 
-CORE_L1_HIT                                       8642       30.166%            12201       21.118%
-CORE_L1_MISS                                     20006       69.834%            45575       78.882%
-                                                 28648      100.000%            57776      100.000%
-                                                  0.70         0.64              0.79         0.73
+CORE_L1_HIT                                       7673       26.769%            10174       17.591%
+CORE_L1_MISS                                     20991       73.231%            47662       82.409%
+                                                 28664      100.000%            57836      100.000%
+                                                  0.73         0.67              0.82         0.76
 
-CORE_L1_FILL                                     21189       99.877%            48817       99.943%
-CORE_L1_WB_FILL                                     26        0.123%               28        0.057%
-                                                 21215      100.000%            48845      100.000%
-                                                  0.00         0.03              0.00         0.02
+CORE_L1_FILL                                     20994       99.876%            48391       99.942%
+CORE_L1_WB_FILL                                     26        0.124%               28        0.058%
+                                                 21020      100.000%            48419      100.000%
+                                                  0.00         0.04              0.00         0.02
 
-CORE_L1_DEMAND_FILL                              20006       94.417%            46283       94.809%
-CORE_L1_PREF_FILL                                 1183        5.583%             2534        5.191%
-                                                 21189      100.000%            48817      100.000%
-                                                  0.06         0.22              0.05         0.22
+CORE_L1_DEMAND_FILL                              20994      100.000%            48391      100.000%
+CORE_L1_PREF_FILL                                    0        0.000%                0        0.000%
+                                                 20994      100.000%            48391      100.000%
+                                                  0.00         0.00              0.00         0.00
 
-CORE_L1_PREF_FILL_USED                             982       83.009%             2042       89.092%
-CORE_L1_PREF_FILL_PARTIAL_USED                      18        1.522%               67        2.923%
-CORE_L1_PREF_FILL_NOT_USED                         183       15.469%              183        7.984%
-                                                  1183      100.000%             2292      100.000%
-                                                  0.32         0.68              0.19         0.53
+CORE_L1_PREF_FILL_USED                               0         -nan%                0         -nan%
+CORE_L1_PREF_FILL_PARTIAL_USED                       0         -nan%                0         -nan%
+CORE_L1_PREF_FILL_NOT_USED                           0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
 
 CORE_L1_DEMAND_USED_POS0                             0         -nan%                0         -nan%
 CORE_L1_DEMAND_USED_POS1                             0         -nan%                0         -nan%
@@ -2349,45 +2349,45 @@ L1_SHADOW_DEMAND_HIT_POS127                          0         -nan%            
 
 CORE_PREF_MLC_SENT                                   0                              0              
 
-CORE_PREF_MLC_USED                                  11       37.931%              109       61.932%
-CORE_PREF_MLC_PARTIAL_USED                          18       62.069%               67       38.068%
+CORE_PREF_MLC_USED                                  10      100.000%              108      100.000%
+CORE_PREF_MLC_PARTIAL_USED                           0        0.000%                0        0.000%
 CORE_PREF_MLC_NOT_USED                               0        0.000%                0        0.000%
 CORE_PREF_MLC_DROPPED                                0        0.000%                0        0.000%
-                                                    29      100.000%              176      100.000%
-                                                  0.62         0.30              0.38         0.38
+                                                    10      100.000%              108      100.000%
+                                                  0.00         0.00              0.00         0.00
 
-CORE_PREF_L1_SENT                                 1183                           2534              
+CORE_PREF_L1_SENT                                    0                              0              
 
-CORE_PREF_L1_USED                                  982       72.153%             2042       82.173%
-CORE_PREF_L1_PARTIAL_USED                           18        1.323%               67        2.696%
-CORE_PREF_L1_NOT_USED                              361       26.525%              376       15.131%
-CORE_PREF_L1_DROPPED                                 0        0.000%                0        0.000%
-                                                  1361      100.000%             2485      100.000%
-                                                  0.54         0.75              0.33         0.66
+CORE_PREF_L1_USED                                    0         -nan%                0         -nan%
+CORE_PREF_L1_PARTIAL_USED                            0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED                                0         -nan%                0         -nan%
+CORE_PREF_L1_DROPPED                                 0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
 
-TOTAL_MEM_LATENCY                              6896279      325.4651         15594165      319.4413
+TOTAL_MEM_LATENCY                              7068403      336.6868         15808091      326.6742
 
-TOTAL_MEM_LATENCY_DEMAND                       6751616      337.4796         15090843      326.0559
+TOTAL_MEM_LATENCY_DEMAND                       7068096      336.6722         15606166      322.5014
 
-TOTAL_MEM_LATENCY_PREF                          144663      122.2849           503322      198.6275
+TOTAL_MEM_LATENCY_PREF                             307           inf           201925           inf
 
-CORE_MEM_LATENCY                               6896279      325.4651         15594165      319.4413
+CORE_MEM_LATENCY                               7068403      336.6868         15808091      326.6742
 
-CORE_MEM_LATENCY_DEMAND                        6751616      337.4796         15090843      326.0559
+CORE_MEM_LATENCY_DEMAND                        7068096      336.6722         15606166      322.5014
 
-CORE_MEM_LATENCY_PREF                           144663      122.2849           503322      198.6275
+CORE_MEM_LATENCY_PREF                              307           inf           201925           inf
 
-CORE_MEM_LATENCY_IFETCH                            240        0.008%             9177        0.135%
-CORE_MEM_LATENCY_DFETCH                        2673354       90.207%          5872728       86.330%
-CORE_MEM_LATENCY_DSTORE                         152794        5.156%           439961        6.468%
+CORE_MEM_LATENCY_IFETCH                            196        0.007%             8913        0.132%
+CORE_MEM_LATENCY_DFETCH                        2734943       91.810%          5959875       88.124%
+CORE_MEM_LATENCY_DSTORE                         243460        8.173%           592311        8.758%
 CORE_MEM_LATENCY_IPRF                                0        0.000%                0        0.000%
 CORE_MEM_LATENCY_UOCPRF                              0        0.000%                0        0.000%
-CORE_MEM_LATENCY_FDIPPRF                           241        0.008%             3143        0.046%
-CORE_MEM_LATENCY_DPRF                               55        0.002%           201518        2.962%
-CORE_MEM_LATENCY_WB                             136900        4.619%           276093        4.059%
+CORE_MEM_LATENCY_FDIPPRF                           141        0.005%             3467        0.051%
+CORE_MEM_LATENCY_DPRF                              166        0.006%           198458        2.934%
+CORE_MEM_LATENCY_WB                                  0        0.000%                0        0.000%
 CORE_MEM_LATENCY_WB_NODIRTY                          0        0.000%                0        0.000%
-                                               2963584      100.000%          6802620      100.000%
-                                                  1.33         1.27              1.46         1.44
+                                               2978906      100.000%          6763024      100.000%
+                                                  1.08         0.28              1.24         0.88
 
 CORE_MEM_STALLING_LATENCY_IFETCH                     0         -nan%                0         -nan%
 CORE_MEM_STALLING_LATENCY_DFETCH                     0         -nan%                0         -nan%
@@ -2399,35 +2399,35 @@ CORE_MEM_STALLING_LATENCY_WB_NODIRTY                 0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-TOTAL_L1_MISS_LATENCY                          2963584      139.8643          6802620      139.3494
+TOTAL_L1_MISS_LATENCY                          2978906      141.8932          6763024      139.7579
 
-TOTAL_L1_MISS_LATENCY_DEMAND                   2821513      141.0333          6509445      140.6444
+TOTAL_L1_MISS_LATENCY_DEMAND                   2978906      141.8932          6763024      139.7579
 
-TOTAL_L1_MISS_LATENCY_PREF                      142071      120.0938           293175      115.6965
+TOTAL_L1_MISS_LATENCY_PREF                           0          -nan                0          -nan
 
-CORE_L1_MISS_LATENCY                           2963584      139.8643          6802620      139.3494
+CORE_L1_MISS_LATENCY                           2978906      141.8932          6763024      139.7579
 
-CORE_L1_MISS_LATENCY_DEMAND                    2821513      141.0333          6509445      140.6444
+CORE_L1_MISS_LATENCY_DEMAND                    2978906      141.8932          6763024      139.7579
 
-CORE_L1_MISS_LATENCY_PREF                       142071      120.0938           293175      115.6965
+CORE_L1_MISS_LATENCY_PREF                            0          -nan                0          -nan
 
-CORE_EVICTED_L1_DEMAND                           14505       94.847%            15358       94.855%
-CORE_EVICTED_L1_PREF_USED                          610        3.989%              640        3.953%
-CORE_EVICTED_L1_PREF_NOT_USED                      178        1.164%              193        1.192%
-                                                 15293      100.000%            16191      100.000%
-                                                  0.06         0.28              0.06         0.28
+CORE_EVICTED_L1_DEMAND                           14917      100.000%            15771      100.000%
+CORE_EVICTED_L1_PREF_USED                            0        0.000%                0        0.000%
+CORE_EVICTED_L1_PREF_NOT_USED                        0        0.000%                0        0.000%
+                                                 14917      100.000%            15771      100.000%
+                                                  0.00         0.00              0.00         0.00
 
-CORE_EVICTED_MLC_DEMAND                          33033       99.527%            58196       98.447%
-CORE_EVICTED_MLC_PREF_USED                          44        0.133%              171        0.289%
-CORE_EVICTED_MLC_PREF_NOT_USED                     113        0.340%              747        1.264%
-                                                 33190      100.000%            59114      100.000%
+CORE_EVICTED_MLC_DEMAND                          33048       99.563%            58268       98.526%
+CORE_EVICTED_MLC_PREF_USED                          28        0.084%              106        0.179%
+CORE_EVICTED_MLC_PREF_NOT_USED                     117        0.352%              766        1.295%
+                                                 33193      100.000%            59140      100.000%
                                                   0.01         0.12              0.03         0.23
 
-CORE_MEM_LATENCY_AVE_DEMAND                    6071047      418.5486          9708770      632.1637
+CORE_MEM_LATENCY_AVE_DEMAND                    6203589      415.8738          9923379      629.2169
 
-CORE_MEM_LATENCY_AVE_PREF_USED                   79287      129.9787           107185      167.4766
+CORE_MEM_LATENCY_AVE_PREF_USED                    4774           inf            25669           inf
 
-CORE_MEM_LATENCY_AVE_PREF_NOT_USED               29148      163.7528           231169     1197.7668
+CORE_MEM_LATENCY_AVE_PREF_NOT_USED               12292           inf           212195           inf
 
 DRAM_LATENCY                                         0                              0              
 
@@ -2441,107 +2441,107 @@ DRAM_PRECHARGE_STALLING                              0                          
 
 DRAM_PRECHARGE_STALLING_WAIT_CYCLES                  0                              0              
 
-L1_STAY_DEMAND                            119405633259  8232032.6273     123996702724  8073753.2702
+L1_STAY_DEMAND                            123861737454  8303394.6138     128471286126  8146045.6614
 
-L1_STAY_PREF_USED                           5082783359  8332431.7361       5242238444  8190997.5687
+L1_STAY_PREF_USED                                    0          -nan                0          -nan
 
-L1_STAY_PREF_NOT_USED                       1382057943  7764370.4663       1462877113  7579674.1606
+L1_STAY_PREF_NOT_USED                                0          -nan                0          -nan
 
-TOTAL_DATA_MISS_LATENCY                        6522441                       14226341              
+TOTAL_DATA_MISS_LATENCY                        6737182                       14558300              
 
-TOTAL_DATA_MISS_COUNT                            46453                          98278              
+TOTAL_DATA_MISS_COUNT                            47422                         100312              
 
-CORE_PREF_L1_NOT_USED_LATENCY200                   172       96.629%              186       96.373%
-CORE_PREF_L1_NOT_USED_LATENCY400                     3        1.685%                3        1.554%
-CORE_PREF_L1_NOT_USED_LATENCY600                     0        0.000%                0        0.000%
-CORE_PREF_L1_NOT_USED_LATENCY800                     0        0.000%                0        0.000%
-CORE_PREF_L1_NOT_USED_LATENCY1000                    2        1.124%                2        1.036%
-CORE_PREF_L1_NOT_USED_LATENCY1200                    1        0.562%                1        0.518%
-CORE_PREF_L1_NOT_USED_LATENCY1400                    0        0.000%                1        0.518%
-CORE_PREF_L1_NOT_USED_LATENCY1600                    0        0.000%                0        0.000%
-CORE_PREF_L1_NOT_USED_LATENCY1600MORE                0        0.000%                0        0.000%
-                                                   178      100.000%              193      100.000%
-                                                  0.09         0.57              0.11         0.69
+CORE_PREF_L1_NOT_USED_LATENCY200                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY400                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY600                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY800                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY1000                    0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY1200                    0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY1400                    0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY1600                    0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_LATENCY1600MORE                0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
 
-CORE_PREF_L1_NOT_USED_DISTANCE_1                     0        0.000%                0        0.000%
-CORE_PREF_L1_NOT_USED_DISTANCE_2                     0        0.000%                0        0.000%
-CORE_PREF_L1_NOT_USED_DISTANCE_4                    16        8.989%               19        9.845%
-CORE_PREF_L1_NOT_USED_DISTANCE_8                    80       44.944%               86       44.560%
-CORE_PREF_L1_NOT_USED_DISTANCE_16                   82       46.067%               88       45.596%
-CORE_PREF_L1_NOT_USED_DISTANCE_32                    0        0.000%                0        0.000%
-CORE_PREF_L1_NOT_USED_DISTANCE_MORE                  0        0.000%                0        0.000%
-                                                   178      100.000%              193      100.000%
-                                                  3.37         0.64              3.36         0.65
+CORE_PREF_L1_NOT_USED_DISTANCE_1                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_DISTANCE_2                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_DISTANCE_4                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_DISTANCE_8                     0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_DISTANCE_16                    0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_DISTANCE_32                    0         -nan%                0         -nan%
+CORE_PREF_L1_NOT_USED_DISTANCE_MORE                  0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
 
-CORE_PREF_L1_USED_LATENCY200                       564       92.459%              592       92.500%
-CORE_PREF_L1_USED_LATENCY400                        12        1.967%               12        1.875%
-CORE_PREF_L1_USED_LATENCY600                         8        1.311%               10        1.562%
-CORE_PREF_L1_USED_LATENCY800                         4        0.656%                4        0.625%
-CORE_PREF_L1_USED_LATENCY1000                        9        1.475%                9        1.406%
-CORE_PREF_L1_USED_LATENCY1200                        9        1.475%                9        1.406%
-CORE_PREF_L1_USED_LATENCY1400                        4        0.656%                4        0.625%
-CORE_PREF_L1_USED_LATENCY1600                        0        0.000%                0        0.000%
-CORE_PREF_L1_USED_LATENCY1600MORE                    0        0.000%                0        0.000%
-                                                   610      100.000%              640      100.000%
-                                                  0.24         0.93              0.23         0.91
+CORE_PREF_L1_USED_LATENCY200                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY400                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY600                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY800                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY1000                        0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY1200                        0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY1400                        0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY1600                        0         -nan%                0         -nan%
+CORE_PREF_L1_USED_LATENCY1600MORE                    0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
 
-CORE_PREF_L1_USED_DISTANCE_1                         0        0.000%                0        0.000%
-CORE_PREF_L1_USED_DISTANCE_2                         1        0.164%                1        0.156%
-CORE_PREF_L1_USED_DISTANCE_4                        71       11.639%               78       12.188%
-CORE_PREF_L1_USED_DISTANCE_8                       196       32.131%              205       32.031%
-CORE_PREF_L1_USED_DISTANCE_16                      342       56.066%              356       55.625%
-CORE_PREF_L1_USED_DISTANCE_32                        0        0.000%                0        0.000%
-CORE_PREF_L1_USED_DISTANCE_MORE                      0        0.000%                0        0.000%
-                                                   610      100.000%              640      100.000%
-                                                  3.44         0.70              3.43         0.71
+CORE_PREF_L1_USED_DISTANCE_1                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_DISTANCE_2                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_DISTANCE_4                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_DISTANCE_8                         0         -nan%                0         -nan%
+CORE_PREF_L1_USED_DISTANCE_16                        0         -nan%                0         -nan%
+CORE_PREF_L1_USED_DISTANCE_32                        0         -nan%                0         -nan%
+CORE_PREF_L1_USED_DISTANCE_MORE                      0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
 
-CORE_PREF_L1_DEMAND_LATENCY300                   14088       97.125%            14912       97.096%
-CORE_PREF_L1_DEMAND_LATENCY400                     105        0.724%              116        0.755%
-CORE_PREF_L1_DEMAND_LATENCY500                     109        0.751%              115        0.749%
-CORE_PREF_L1_DEMAND_LATENCY600                      27        0.186%               29        0.189%
-CORE_PREF_L1_DEMAND_LATENCY700                       9        0.062%                9        0.059%
-CORE_PREF_L1_DEMAND_LATENCY800                       5        0.034%                5        0.033%
-CORE_PREF_L1_DEMAND_LATENCY900                      13        0.090%               14        0.091%
-CORE_PREF_L1_DEMAND_LATENCY1000                     18        0.124%               18        0.117%
-CORE_PREF_L1_DEMAND_LATENCY1000MORE                131        0.903%              140        0.912%
-                                                 14505      100.000%            15358      100.000%
-                                                  0.12         0.85              0.12         0.85
+CORE_PREF_L1_DEMAND_LATENCY300                   14506       97.245%            15333       97.223%
+CORE_PREF_L1_DEMAND_LATENCY400                     106        0.711%              116        0.736%
+CORE_PREF_L1_DEMAND_LATENCY500                     101        0.677%              107        0.678%
+CORE_PREF_L1_DEMAND_LATENCY600                      22        0.147%               24        0.152%
+CORE_PREF_L1_DEMAND_LATENCY700                      14        0.094%               14        0.089%
+CORE_PREF_L1_DEMAND_LATENCY800                       8        0.054%                8        0.051%
+CORE_PREF_L1_DEMAND_LATENCY900                      10        0.067%               11        0.070%
+CORE_PREF_L1_DEMAND_LATENCY1000                     12        0.080%               15        0.095%
+CORE_PREF_L1_DEMAND_LATENCY1000MORE                138        0.925%              143        0.907%
+                                                 14917      100.000%            15771      100.000%
+                                                  0.12         0.84              0.11         0.84
 
-CORE_PREF_MLC_NOT_USED_LATENCY200                   88       77.876%              216       28.916%
-CORE_PREF_MLC_NOT_USED_LATENCY400                   23       20.354%              323       43.240%
-CORE_PREF_MLC_NOT_USED_LATENCY600                    2        1.770%              198       26.506%
-CORE_PREF_MLC_NOT_USED_LATENCY800                    0        0.000%               10        1.339%
+CORE_PREF_MLC_NOT_USED_LATENCY200                   94       80.342%              233       30.418%
+CORE_PREF_MLC_NOT_USED_LATENCY400                   21       17.949%              337       43.995%
+CORE_PREF_MLC_NOT_USED_LATENCY600                    2        1.709%              188       24.543%
+CORE_PREF_MLC_NOT_USED_LATENCY800                    0        0.000%                8        1.044%
 CORE_PREF_MLC_NOT_USED_LATENCY1000                   0        0.000%                0        0.000%
 CORE_PREF_MLC_NOT_USED_LATENCY1200                   0        0.000%                0        0.000%
 CORE_PREF_MLC_NOT_USED_LATENCY1400                   0        0.000%                0        0.000%
 CORE_PREF_MLC_NOT_USED_LATENCY1600                   0        0.000%                0        0.000%
 CORE_PREF_MLC_NOT_USED_LATENCY1600MORE               0        0.000%                0        0.000%
-                                                   113      100.000%              747      100.000%
-                                                  0.24         0.42              1.00         0.56
+                                                   117      100.000%              766      100.000%
+                                                  0.21         0.41              0.96         0.56
 
-CORE_PREF_MLC_USED_LATENCY200                       30       68.182%              102       59.649%
-CORE_PREF_MLC_USED_LATENCY400                        8       18.182%               46       26.901%
-CORE_PREF_MLC_USED_LATENCY600                        6       13.636%               23       13.450%
+CORE_PREF_MLC_USED_LATENCY200                       17       60.714%               45       42.453%
+CORE_PREF_MLC_USED_LATENCY400                        7       25.000%               41       38.679%
+CORE_PREF_MLC_USED_LATENCY600                        4       14.286%               20       18.868%
 CORE_PREF_MLC_USED_LATENCY800                        0        0.000%                0        0.000%
 CORE_PREF_MLC_USED_LATENCY1000                       0        0.000%                0        0.000%
 CORE_PREF_MLC_USED_LATENCY1200                       0        0.000%                0        0.000%
 CORE_PREF_MLC_USED_LATENCY1400                       0        0.000%                0        0.000%
 CORE_PREF_MLC_USED_LATENCY1600                       0        0.000%                0        0.000%
 CORE_PREF_MLC_USED_LATENCY1600MORE                   0        0.000%                0        0.000%
-                                                    44      100.000%              171      100.000%
-                                                  0.45         0.62              0.54         0.59
+                                                    28      100.000%              106      100.000%
+                                                  0.54         0.61              0.76         0.56
 
-CORE_PREF_MLC_DEMAND_LATENCY300                  32461       98.268%            57175       98.246%
-CORE_PREF_MLC_DEMAND_LATENCY400                    154        0.466%              337        0.579%
-CORE_PREF_MLC_DEMAND_LATENCY500                     65        0.197%               76        0.131%
-CORE_PREF_MLC_DEMAND_LATENCY600                     92        0.279%              101        0.174%
-CORE_PREF_MLC_DEMAND_LATENCY700                     22        0.067%               27        0.046%
-CORE_PREF_MLC_DEMAND_LATENCY800                     18        0.054%               26        0.045%
-CORE_PREF_MLC_DEMAND_LATENCY900                     11        0.033%               22        0.038%
-CORE_PREF_MLC_DEMAND_LATENCY1000                    15        0.045%               37        0.064%
-CORE_PREF_MLC_DEMAND_LATENCY1000MORE               195        0.590%              395        0.679%
-                                                 33033      100.000%            58196      100.000%
-                                                  0.07         0.68              0.08         0.72
+CORE_PREF_MLC_DEMAND_LATENCY300                  32373       97.958%            57132       98.050%
+CORE_PREF_MLC_DEMAND_LATENCY400                    184        0.557%              377        0.647%
+CORE_PREF_MLC_DEMAND_LATENCY500                     70        0.212%               82        0.141%
+CORE_PREF_MLC_DEMAND_LATENCY600                    116        0.351%              117        0.201%
+CORE_PREF_MLC_DEMAND_LATENCY700                     36        0.109%               45        0.077%
+CORE_PREF_MLC_DEMAND_LATENCY800                     24        0.073%               34        0.058%
+CORE_PREF_MLC_DEMAND_LATENCY900                     15        0.045%               27        0.046%
+CORE_PREF_MLC_DEMAND_LATENCY1000                    13        0.039%               36        0.062%
+CORE_PREF_MLC_DEMAND_LATENCY1000MORE               217        0.657%              418        0.717%
+                                                 33048      100.000%            58268      100.000%
+                                                  0.09         0.72              0.09         0.74
 
 TOTAL_BATCH_FORMED                                   0                              0              
 
@@ -2583,38 +2583,38 @@ PERF_PRED_NUM_STAT_RESETS                            0                          
 
 PERF_PRED_RESET_STATS_CYCLE                          0                              0              
 
-PERF_PRED_CYCLE                               14800753                       22352654              
+PERF_PRED_CYCLE                               14874079                       22452212              
 
 ESTIMATED_ALONE_CYCLES                               0        0.0000                0        0.0000
 
-NUM_WINDOWS_WITH_DCACHE_MISS                     11052                          20054              
+NUM_WINDOWS_WITH_DCACHE_MISS                     11048                          20052              
 
-LONGEST_DCACHE_MISS_CHAIN                        35338                          67733              
+LONGEST_DCACHE_MISS_CHAIN                        35331                          67720              
 
-NUM_DCACHE_MISSES_IN_WINDOW_1                     4039       36.545%             6978       34.796%
-NUM_DCACHE_MISSES_IN_WINDOW_2                     2114       19.128%             3610       18.001%
-NUM_DCACHE_MISSES_IN_WINDOW_3                     1157       10.469%             2128       10.611%
-NUM_DCACHE_MISSES_IN_WINDOW_4                      737        6.668%             1392        6.941%
-NUM_DCACHE_MISSES_IN_WINDOW_5                      568        5.139%             1116        5.565%
-NUM_DCACHE_MISSES_IN_WINDOW_6                      439        3.972%              821        4.094%
-NUM_DCACHE_MISSES_IN_WINDOW_7                      335        3.031%              671        3.346%
-NUM_DCACHE_MISSES_IN_WINDOW_8                      327        2.959%              626        3.122%
-NUM_DCACHE_MISSES_IN_WINDOW_9                      279        2.524%              567        2.827%
-NUM_DCACHE_MISSES_IN_WINDOW_10                     246        2.226%              467        2.329%
-NUM_DCACHE_MISSES_IN_WINDOW_11                     202        1.828%              390        1.945%
-NUM_DCACHE_MISSES_IN_WINDOW_12                     134        1.212%              275        1.371%
-NUM_DCACHE_MISSES_IN_WINDOW_13                     111        1.004%              239        1.192%
-NUM_DCACHE_MISSES_IN_WINDOW_14                      88        0.796%              171        0.853%
-NUM_DCACHE_MISSES_IN_WINDOW_15                      71        0.642%              155        0.773%
-NUM_DCACHE_MISSES_IN_WINDOW_16_OR_MORE             205        1.855%              448        2.234%
-                                                 11052      100.000%            20054      100.000%
-                                                  2.70         3.26              2.93         3.40
+NUM_DCACHE_MISSES_IN_WINDOW_1                     4033       36.504%             6974       34.780%
+NUM_DCACHE_MISSES_IN_WINDOW_2                     2118       19.171%             3614       18.023%
+NUM_DCACHE_MISSES_IN_WINDOW_3                     1156       10.463%             2129       10.617%
+NUM_DCACHE_MISSES_IN_WINDOW_4                      736        6.662%             1389        6.927%
+NUM_DCACHE_MISSES_IN_WINDOW_5                      569        5.150%             1118        5.576%
+NUM_DCACHE_MISSES_IN_WINDOW_6                      438        3.965%              819        4.084%
+NUM_DCACHE_MISSES_IN_WINDOW_7                      334        3.023%              667        3.326%
+NUM_DCACHE_MISSES_IN_WINDOW_8                      328        2.969%              627        3.127%
+NUM_DCACHE_MISSES_IN_WINDOW_9                      280        2.534%              571        2.848%
+NUM_DCACHE_MISSES_IN_WINDOW_10                     245        2.218%              466        2.324%
+NUM_DCACHE_MISSES_IN_WINDOW_11                     203        1.837%              390        1.945%
+NUM_DCACHE_MISSES_IN_WINDOW_12                     132        1.195%              272        1.356%
+NUM_DCACHE_MISSES_IN_WINDOW_13                     112        1.014%              238        1.187%
+NUM_DCACHE_MISSES_IN_WINDOW_14                      85        0.769%              174        0.868%
+NUM_DCACHE_MISSES_IN_WINDOW_15                      73        0.661%              157        0.783%
+NUM_DCACHE_MISSES_IN_WINDOW_16_OR_MORE             206        1.865%              447        2.229%
+                                                 11048      100.000%            20052      100.000%
+                                                  2.71         3.27              2.93         3.40
 
-DCACHE_MLP_IN_WINDOW_1_0                          8728       78.972%            15554       77.561%
-DCACHE_MLP_IN_WINDOW_1_5                          1757       15.898%             3423       17.069%
-DCACHE_MLP_IN_WINDOW_2_0                           520        4.705%              988        4.927%
-DCACHE_MLP_IN_WINDOW_2_5                            18        0.163%               37        0.185%
-DCACHE_MLP_IN_WINDOW_3_0                            26        0.235%               43        0.214%
+DCACHE_MLP_IN_WINDOW_1_0                          8721       78.937%            15540       77.499%
+DCACHE_MLP_IN_WINDOW_1_5                          1759       15.921%             3429       17.101%
+DCACHE_MLP_IN_WINDOW_2_0                           522        4.725%              993        4.952%
+DCACHE_MLP_IN_WINDOW_2_5                            17        0.154%               37        0.185%
+DCACHE_MLP_IN_WINDOW_3_0                            26        0.235%               44        0.219%
 DCACHE_MLP_IN_WINDOW_3_5                             0        0.000%                1        0.005%
 DCACHE_MLP_IN_WINDOW_4_0                             3        0.027%                8        0.040%
 DCACHE_MLP_IN_WINDOW_4_5                             0        0.000%                0        0.000%
@@ -2626,7 +2626,7 @@ DCACHE_MLP_IN_WINDOW_7_0                             0        0.000%            
 DCACHE_MLP_IN_WINDOW_7_5                             0        0.000%                0        0.000%
 DCACHE_MLP_IN_WINDOW_8_0                             0        0.000%                0        0.000%
 DCACHE_MLP_IN_WINDOW_8_5_OR_MORE                     0        0.000%                0        0.000%
-                                                 11052      100.000%            20054      100.000%
+                                                 11048      100.000%            20052      100.000%
                                                   0.27         0.53              0.29         0.54
 
 PARAM_CHIP_CYCLE_TIME                                0                              0              
@@ -2657,14 +2657,14 @@ MEM_REQ_NON_SCHEDULED_64                             0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-MEM_REQ_DEMANDS__0                             7244430       99.939%         14787509       99.911%
-MEM_REQ_DEMANDS__4                                4422        0.061%            12234        0.083%
-MEM_REQ_DEMANDS__8                                   0        0.000%              362        0.002%
-MEM_REQ_DEMANDS_12                                   0        0.000%              457        0.003%
-MEM_REQ_DEMANDS_16                                   0        0.000%              107        0.001%
-MEM_REQ_DEMANDS_20                                   0        0.000%               84        0.001%
-MEM_REQ_DEMANDS_24                                   0        0.000%                0        0.000%
-MEM_REQ_DEMANDS_28                                   0        0.000%                0        0.000%
+MEM_REQ_DEMANDS__0                             7287056       99.878%         14854152       99.866%
+MEM_REQ_DEMANDS__4                                6778        0.093%            15922        0.107%
+MEM_REQ_DEMANDS__8                                 698        0.010%             1319        0.009%
+MEM_REQ_DEMANDS_12                                 344        0.005%              786        0.005%
+MEM_REQ_DEMANDS_16                                 335        0.005%             1081        0.007%
+MEM_REQ_DEMANDS_20                                 351        0.005%              435        0.003%
+MEM_REQ_DEMANDS_24                                 344        0.005%              344        0.002%
+MEM_REQ_DEMANDS_28                                  40        0.001%               40        0.000%
 MEM_REQ_DEMANDS_32                                   0        0.000%                0        0.000%
 MEM_REQ_DEMANDS_36                                   0        0.000%                0        0.000%
 MEM_REQ_DEMANDS_40                                   0        0.000%                0        0.000%
@@ -2674,17 +2674,17 @@ MEM_REQ_DEMANDS_52                                   0        0.000%            
 MEM_REQ_DEMANDS_56                                   0        0.000%                0        0.000%
 MEM_REQ_DEMANDS_60                                   0        0.000%                0        0.000%
 MEM_REQ_DEMANDS_64                                   0        0.000%                0        0.000%
-                                               7248852      100.000%         14800753      100.000%
-                                                  0.00         0.02              0.00         0.04
+                                               7295946      100.000%         14874079      100.000%
+                                                  0.00         0.08              0.00         0.07
 
-MEM_REQ_PREFS__0                               7230881       99.752%         14763069       99.745%
-MEM_REQ_PREFS__4                                 16892        0.233%            22763        0.154%
-MEM_REQ_PREFS__8                                   732        0.010%             3600        0.024%
-MEM_REQ_PREFS_12                                   203        0.003%             1865        0.013%
-MEM_REQ_PREFS_16                                   144        0.002%             1814        0.012%
-MEM_REQ_PREFS_20                                     0        0.000%             1562        0.011%
-MEM_REQ_PREFS_24                                     0        0.000%             5786        0.039%
-MEM_REQ_PREFS_28                                     0        0.000%              294        0.002%
+MEM_REQ_PREFS__0                               7295946      100.000%         14860703       99.910%
+MEM_REQ_PREFS__4                                     0        0.000%             1838        0.012%
+MEM_REQ_PREFS__8                                     0        0.000%             1816        0.012%
+MEM_REQ_PREFS_12                                     0        0.000%             1327        0.009%
+MEM_REQ_PREFS_16                                     0        0.000%             1181        0.008%
+MEM_REQ_PREFS_20                                     0        0.000%             1387        0.009%
+MEM_REQ_PREFS_24                                     0        0.000%             5525        0.037%
+MEM_REQ_PREFS_28                                     0        0.000%              302        0.002%
 MEM_REQ_PREFS_32                                     0        0.000%                0        0.000%
 MEM_REQ_PREFS_36                                     0        0.000%                0        0.000%
 MEM_REQ_PREFS_40                                     0        0.000%                0        0.000%
@@ -2694,12 +2694,12 @@ MEM_REQ_PREFS_52                                     0        0.000%            
 MEM_REQ_PREFS_56                                     0        0.000%                0        0.000%
 MEM_REQ_PREFS_60                                     0        0.000%                0        0.000%
 MEM_REQ_PREFS_64                                     0        0.000%                0        0.000%
-                                               7248852      100.000%         14800753      100.000%
-                                                  0.00         0.06              0.01         0.15
+                                               7295946      100.000%         14874079      100.000%
+                                                  0.00         0.00              0.00         0.14
 
-MEM_REQ_WRITEBACKS__0                          7246886       99.973%         14797196       99.976%
-MEM_REQ_WRITEBACKS__4                             1966        0.027%             3509        0.024%
-MEM_REQ_WRITEBACKS__8                                0        0.000%               48        0.000%
+MEM_REQ_WRITEBACKS__0                          7293928       99.972%         14870585       99.977%
+MEM_REQ_WRITEBACKS__4                             2018        0.028%             3462        0.023%
+MEM_REQ_WRITEBACKS__8                                0        0.000%               32        0.000%
 MEM_REQ_WRITEBACKS_12                                0        0.000%                0        0.000%
 MEM_REQ_WRITEBACKS_16                                0        0.000%                0        0.000%
 MEM_REQ_WRITEBACKS_20                                0        0.000%                0        0.000%
@@ -2714,14 +2714,14 @@ MEM_REQ_WRITEBACKS_52                                0        0.000%            
 MEM_REQ_WRITEBACKS_56                                0        0.000%                0        0.000%
 MEM_REQ_WRITEBACKS_60                                0        0.000%                0        0.000%
 MEM_REQ_WRITEBACKS_64                                0        0.000%                0        0.000%
-                                               7248852      100.000%         14800753      100.000%
+                                               7295946      100.000%         14874079      100.000%
                                                   0.00         0.02              0.00         0.02
 
-MEM_REQ_DEMAND_CYCLES                          4701810                       10047208              
+MEM_REQ_DEMAND_CYCLES                          4858754                       10303698              
 
-MEM_REQ_PREF_CYCLES                             201287                         661850              
+MEM_REQ_PREF_CYCLES                                671                         251572              
 
-MEM_REQ_WB_CYCLES                              1019328                        1782063              
+MEM_REQ_WB_CYCLES                              1019079                        1782013              
 
 DRAM_CHANNEL_REQS                                    0                              0              
 
@@ -3800,8 +3800,8 @@ DRAM_BOTTLENECK_FAW_100                              0         -nan%            
 DRAM_ROW_HIT_GEN_AFTER_ROW_OPEN_STALLING             0                              0              
 
 KNOWN_BAD_ADDRESS                                    0        0.000%                0        0.000%
-GOOD_ADDRESS                                   6786794      100.000%         13267836      100.000%
-                                               6786794      100.000%         13267836      100.000%
+GOOD_ADDRESS                                   6786926      100.000%         13266213      100.000%
+                                               6786926      100.000%         13266213      100.000%
                                                   1.00         1.00              1.00         1.00
 
 BBL_LENGTH_1                                         0         -nan%                0         -nan%
@@ -3858,33 +3858,33 @@ BBL_DONT_END_PRED_NT_LENGTH_24                       0         -nan%            
                                                      0         -nan%                0         -nan%
                                                   -nan         -nan              -nan         -nan
 
-DATA_LD_CYCLES_ONPATH                          4690323                        9996785              
+DATA_LD_CYCLES_ONPATH                          4841348                       10236767              
 
-DATA_LD_CYCLES_OFFPATH                           14608                          51723              
+DATA_LD_CYCLES_OFFPATH                           16984                          54511              
 
-DATA_LD_MLC_CYCLES_ONPATH                       270723                         467556              
+DATA_LD_MLC_CYCLES_ONPATH                       270648                         467450              
 
-DATA_LD_MLC_CYCLES_OFFPATH                       11928                          46467              
+DATA_LD_MLC_CYCLES_OFFPATH                       11896                          46498              
 
-DATA_LD_MLC_ACCESSES_ONPATH                      16917                          29214              
+DATA_LD_MLC_ACCESSES_ONPATH                      16913                          29208              
 
-DATA_LD_MLC_ACCESSES_OFFPATH                       745                           2902              
+DATA_LD_MLC_ACCESSES_OFFPATH                       743                           2904              
 
-DATA_LD_L1_CYCLES_ONPATH                        474322                         668611              
+DATA_LD_L1_CYCLES_ONPATH                        421023                         557433              
 
-DATA_LD_L1_CYCLES_OFFPATH                          880                           1430              
+DATA_LD_L1_CYCLES_OFFPATH                          880                           1265              
 
-DATA_LD_L1_ACCESSES_ONPATH                        8623                          12155              
+DATA_LD_L1_ACCESSES_ONPATH                        7654                          10134              
 
-DATA_LD_L1_ACCESSES_OFFPATH                         16                             26              
+DATA_LD_L1_ACCESSES_OFFPATH                         16                             23              
 
-DATA_LD_MEM_CYCLES_ONPATH                      3945278                        8860618              
+DATA_LD_MEM_CYCLES_ONPATH                      4149677                        9211884              
 
-DATA_LD_MEM_CYCLES_OFFPATH                        1800                           3826              
+DATA_LD_MEM_CYCLES_OFFPATH                        4208                           6748              
 
-DATA_LD_MEM_ACCESSES_ONPATH                      20008                          45556              
+DATA_LD_MEM_ACCESSES_ONPATH                      20977                          47582              
 
-DATA_LD_MEM_ACCESSES_OFFPATH                        12                             25              
+DATA_LD_MEM_ACCESSES_OFFPATH                        12                             28              
 
 DATA_LD_PREF_CYCLES_ONPATH                           0                              0              
 
