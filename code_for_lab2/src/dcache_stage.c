@@ -50,7 +50,7 @@
 
 #include "cmp_model.h"
 #include "prefetcher/l2l1pref.h"
-#include "miss_type_tracker.h"
+#include "libs/cache_lib.h"
 
 /**************************************************************************************/
 /* Macros */
@@ -112,7 +112,6 @@ void init_dcache_stage(uns8 proc_id, const char* name) {
                DCACHE_REPL);
 
   memset(dc->rand_wb_state, 0, NUM_ELEMENTS(dc->rand_wb_state));
-  init_miss_tracker();
 }
 
 
@@ -369,27 +368,39 @@ void update_dcache_stage(Stage_Data* src_sd) {
         wake_up_ops(op, REG_DATA_DEP, model->wake_hook);
       }
     } else {  // data cache miss
-      uns invalid_line_count = cache_get_invalid_line_count(&dc->dcache, op->oracle_info.va);
-      if (invalid_line_count > 0){
-        STAT_EVENT(dc->proc_id, COMPULSORY_MISS);
-      }
-      else{
-        uns total_valid_entries = 0;
-        Addr tag;
-        uns set = cache_index(dc->dcache, op->oracle_info.va, &tag, &line_addr);
-        for (int ii = 0; ii< dc->dcache.assoc; ii++){
-          Cache_Entry* entry = &dc->dcache.entries[set][ii];
-          if (entry->valid){
-            total_valid_entries++;
-          }
+        bool is_compulsory_miss = false;
+        bool is_conflict_miss = false;
+        bool is_capacity_miss = false;
+
+        // 1. Compulsory Miss: Check if the line has been accessed before
+       Dcache_Data* existing_line = (Dcache_Data*) cache_access(&dc->dcache, op->oracle_info.va, &line_addr, FALSE);
+        if (!existing_line) {
+            // Line not found, compulsory miss
+            is_compulsory_miss = true;
         }
 
-        if (total_valid_entries == dc->dcache.assoc){
-          STAT_EVENT(dc->proc_id, CAPACITY_MISS);
-        } else {
-          STAT_EVENT(dc->proc_id, CONFLICT_MISS);
+        // 2. Conflict Miss: Check if the set has valid lines but a new line is being inserted
+        if (!is_compulsory_miss) {
+            // Cache set is not full, yet this line is being replaced
+            if (cache_get_invalid_line_count(&dc->dcache, op->oracle_info.va) > 0) {
+                is_conflict_miss = true;
+            }
         }
-      }
+
+        // 3. Capacity Miss: If the cache set is full and all lines are valid, a capacity miss occurred
+        if (cache_get_invalid_line_count(&dc->dcache, op->oracle_info.va) == 0) {
+            is_capacity_miss = true;
+        }
+
+        // Now track the miss with the correct STAT_EVENT
+        if (is_compulsory_miss) {
+            STAT_EVENT(op->proc_id, COMPULSORY_MISS);
+        } else if (is_conflict_miss) {
+            STAT_EVENT(op->proc_id, CONFLICT_MISS);
+        } else if (is_capacity_miss) {
+            STAT_EVENT(op->proc_id, CAPACITY_MISS);
+        }
+
       if(op->table_info->mem_type == MEM_ST)
         STAT_EVENT(op->proc_id, POWER_DCACHE_WRITE_MISS);
       else

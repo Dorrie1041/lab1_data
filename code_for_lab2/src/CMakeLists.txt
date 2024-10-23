@@ -54,7 +54,6 @@ foreach(dir IN LISTS scarab_dirs)
       ${dir}/*.h
       ${dir}/*.cc
       ${dir}/*.c
-      ${dir}/*.cpp
     )
     set(srcs ${srcs} ${dir_srcs})
 endforeach()
