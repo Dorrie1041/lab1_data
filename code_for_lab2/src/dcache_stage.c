@@ -52,6 +52,34 @@
 #include "prefetcher/l2l1pref.h"
 #include "libs/cache_lib.h"
 
+#define HASH_TABLE_SIZE 1024  // Adjust the size as needed
+
+typedef struct {
+    Addr addr;
+    Flag valid;
+} Simple_Hash_Entry;
+
+// Declare the hash table
+Simple_Hash_Entry seen_addresses[HASH_TABLE_SIZE];
+
+// Simple hash function
+static inline uns simple_hash(Addr addr) {
+    return addr % HASH_TABLE_SIZE;
+}
+
+// Check if an address is in the hash table
+static inline Flag is_address_seen(Addr addr) {
+    uns index = simple_hash(addr);
+    return seen_addresses[index].valid && (seen_addresses[index].addr == addr);
+}
+
+// Add an address to the hash table
+static inline void add_address(Addr addr) {
+    uns index = simple_hash(addr);
+    seen_addresses[index].addr = addr;
+    seen_addresses[index].valid = TRUE;
+}
+
 /**************************************************************************************/
 /* Macros */
 
@@ -368,38 +396,22 @@ void update_dcache_stage(Stage_Data* src_sd) {
         wake_up_ops(op, REG_DATA_DEP, model->wake_hook);
       }
     } else {  // data cache miss
-        bool is_compulsory_miss = false;
-        bool is_conflict_miss = false;
-        bool is_capacity_miss = false;
+	bool is_compulsory_miss = false;
+	bool is_conflict_miss = false;
+	bool is_capacity_miss = false;
 
-        // 1. Compulsory Miss: Check if the line has been accessed before
-       Dcache_Data* existing_line = (Dcache_Data*) cache_access(&dc->dcache, op->oracle_info.va, &line_addr, FALSE);
-        if (!existing_line) {
-            // Line not found, compulsory miss
-            is_compulsory_miss = true;
-        }
-
-        // 2. Conflict Miss: Check if the set has valid lines but a new line is being inserted
-        if (!is_compulsory_miss) {
-            // Cache set is not full, yet this line is being replaced
-            if (cache_get_invalid_line_count(&dc->dcache, op->oracle_info.va) > 0) {
-                is_conflict_miss = true;
-            }
-        }
-
-        // 3. Capacity Miss: If the cache set is full and all lines are valid, a capacity miss occurred
-        if (cache_get_invalid_line_count(&dc->dcache, op->oracle_info.va) == 0) {
-            is_capacity_miss = true;
-        }
-
-        // Now track the miss with the correct STAT_EVENT
-        if (is_compulsory_miss) {
-            STAT_EVENT(op->proc_id, COMPULSORY_MISS);
-        } else if (is_conflict_miss) {
-            STAT_EVENT(op->proc_id, CONFLICT_MISS);
-        } else if (is_capacity_miss) {
-            STAT_EVENT(op->proc_id, CAPACITY_MISS);
-        }
+	// Check if the line has been accessed before
+	if (!is_address_seen(line_addr)) {
+	    is_compulsory_miss = true;
+	    add_address(line_addr);  // Mark this address as seen
+	} else {
+	    // Check for capacity or conflict miss
+	    if (cache_get_invalid_line_count(&dc->dcache, op->oracle_info.va) > 0) {
+	        is_conflict_miss = true;
+	    } else {
+	        is_capacity_miss = true;
+	    }
+	}
 
       if(op->table_info->mem_type == MEM_ST)
         STAT_EVENT(op->proc_id, POWER_DCACHE_WRITE_MISS);
@@ -460,6 +472,13 @@ void update_dcache_stage(Stage_Data* src_sd) {
           }
 
           if(!op->off_path) {
+		if (is_compulsory_miss) {
+                    STAT_EVENT(op->proc_id, COMPULSORY_MISS);
+                } else if (is_conflict_miss) {
+                    STAT_EVENT(op->proc_id, CONFLICT_MISS);
+                } else if (is_capacity_miss) {
+                    STAT_EVENT(op->proc_id, CAPACITY_MISS);
+                }
             STAT_EVENT(op->proc_id, DCACHE_MISS);
             STAT_EVENT(op->proc_id, DCACHE_MISS_ONPATH);
             STAT_EVENT(op->proc_id, DCACHE_MISS_LD_ONPATH);
@@ -515,6 +534,15 @@ void update_dcache_stage(Stage_Data* src_sd) {
           }
 
           if(!op->off_path) {
+                if (is_compulsory_miss) {
+                    STAT_EVENT(op->proc_id, COMPULSORY_MISS);
+                } else if (is_conflict_miss) {
+                    STAT_EVENT(op->proc_id, CONFLICT_MISS);
+                } else if (is_capacity_miss) {
+                    STAT_EVENT(op->proc_id, CAPACITY_MISS);
+                }
+            STAT_EVENT(op->proc_id, DCACHE_MISS);
+            STAT_EVENT(op->proc_id, DCACHE_MISS_ONPATH);
             STAT_EVENT(op->proc_id, DCACHE_MISS);
             STAT_EVENT(op->proc_id, DCACHE_MISS_ONPATH);
             STAT_EVENT(op->proc_id, DCACHE_MISS_LD_ONPATH);
@@ -573,6 +601,15 @@ void update_dcache_stage(Stage_Data* src_sd) {
           }
 
           if(!op->off_path) {
+                if (is_compulsory_miss) {
+                    STAT_EVENT(op->proc_id, COMPULSORY_MISS);
+                } else if (is_conflict_miss) {
+                    STAT_EVENT(op->proc_id, CONFLICT_MISS);
+                } else if (is_capacity_miss) {
+                    STAT_EVENT(op->proc_id, CAPACITY_MISS);
+                }
+            STAT_EVENT(op->proc_id, DCACHE_MISS);
+            STAT_EVENT(op->proc_id, DCACHE_MISS_ONPATH);
             STAT_EVENT(op->proc_id, DCACHE_MISS);
             STAT_EVENT(op->proc_id, DCACHE_MISS_ONPATH);
             STAT_EVENT(op->proc_id, DCACHE_MISS_ST_ONPATH);
